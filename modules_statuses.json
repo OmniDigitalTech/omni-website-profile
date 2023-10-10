@@ -1,4 +1,6 @@
 {
     "Management": true,
-    "Website": true
+    "Website": true,
+    "Order": true,
+    "Project": true
 }
