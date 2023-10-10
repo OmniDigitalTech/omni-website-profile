@@ -1,5 +1,5 @@
-<!doctype html >
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-layout="twocolumn" data-layout-style="default" data-layout-position="fixed" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-layout-width="fluid">
 
 <head>
     <meta charset="utf-8" />
@@ -12,33 +12,35 @@
     @include('management::layouts.head-css')
 </head>
 
-@section('body')
-    @include('management::layouts.body')
-@show
+<body>
+
     <!-- Begin page -->
     <div id="layout-wrapper">
-        @include('management::layouts.topbar')
-        @include('management::layouts.sidebar')
+
+     @include('management::layouts.topbar')
+     @include('management::layouts.sidebar')
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
         <div class="main-content">
             <div class="page-content">
+                <!-- Start content -->
                 <div class="container-fluid">
                     @yield('content')
-                </div>
-                <!-- container-fluid -->
+                </div> <!-- content -->
             </div>
-            <!-- End Page-content -->
             @include('management::layouts.footer')
         </div>
-        <!-- end main content-->
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
     </div>
-    <!-- END layout-wrapper -->
+    <!-- END wrapper -->
 
-{{--    @include('management::layouts.customizer')--}}
+    <!-- Right Sidebar -->
+    @include('management::layouts.customizer')
+    <!-- END Right Sidebar -->
 
-    <!-- JAVASCRIPT -->
     @include('management::layouts.vendor-scripts')
 </body>
 
