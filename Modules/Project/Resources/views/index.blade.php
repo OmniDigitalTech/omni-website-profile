@@ -15,7 +15,7 @@
     <div class="row g-4 mb-3">
         <div class="col-sm-auto">
             <div>
-                <a href="apps-projects-create" class="btn btn-success"><i class="ri-add-line align-bottom me-1"></i> Add New</a>
+                <a href="{{ route('management.project.create') }}" class="btn btn-success"><i class="ri-add-line align-bottom me-1"></i> Add New</a>
             </div>
         </div>
         <div class="col-sm">

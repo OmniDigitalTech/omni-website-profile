@@ -133,7 +133,7 @@
                                             <h5 class="fw-semibold text-uppercase align-middle">Payment History</h5>
                                         </div>
                                         <div class="col-6">
-                                            <a href="" class="btn btn-sm btn-success float-end"><i class="ri-add-line align-bottom me-1"></i>Invoice</a>
+                                            <a href="" class="btn btn-sm btn-success float-end"><i class="ri-add-line align-bottom me-1"></i>Add Invoice</a>
                                         </div>
                                     </div>
                                 </div>
