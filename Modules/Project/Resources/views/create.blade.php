@@ -11,121 +11,114 @@
             Create Project
         @endslot
     @endcomponent
-    <div class="row">
-        <div class="col-lg-8">
-            <div class="card">
-                <div class="card-body">
-                    <div class="mb-3">
-                        <label class="form-label" for="project-title-input">Project Title</label>
-                        <input type="text" class="form-control" id="project-title-input" placeholder="Enter project title">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label" for="project-thumbnail-img">Thumbnail Image</label>
-                        <input class="form-control" id="project-thumbnail-img" type="file"
-                               accept="image/png, image/gif, image/jpeg">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Project Description</label>
-                        <div id="ckeditor-classic">
-                            <p>It will be as simple as occidental in fact, it will be Occidental. To an English person, it
-                                will seem like simplified English, as a skeptical Cambridge friend of mine told me what
-                                Occidental is. The European languages are members of the same family. Their separate
-                                existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
-                            <ul>
-                                <li>Product Design, Figma (Software), Prototype</li>
-                                <li>Four Dashboards : Ecommerce, Analytics, Project etc.</li>
-                                <li>Create calendar, chat and email app pages.</li>
-                                <li>Add authentication pages</li>
-                            </ul>
+    <form action="{{ route('management.project.store') }}" method="POST">
+        @csrf
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label" for="project-title-input">Project Title</label>
+                            <input type="text" class="form-control" name="title" id="project-title-input" placeholder="Enter project title" required>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="mb-3 mb-lg-0">
-                                <label for="price-input" class="form-label">Price</label>
-                                <input type="text" class="form-control" name="price" id="price-input"
-                                       placeholder="Enter price">
+                        <div class="mb-3">
+                            <label class="form-label" for="project-thumbnail-img">Thumbnail Image</label>
+                            <input class="form-control" id="project-thumbnail-img" name="thumbnail" type="file"
+                                   accept="image/png, image/gif, image/jpeg">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Project Description</label>
+                            <textarea name="description" id="ckeditor-classic"></textarea>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="mb-3 mb-lg-0">
+                                    <label for="price-input" class="form-label">Price</label>
+                                    <input type="text" class="form-control" name="price" id="price-input"
+                                           placeholder="Enter price">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div>
-                                <label for="datepicker-deadline-input" class="form-label">Deadline</label>
-                                <input type="text" class="form-control" id="datepicker-deadline-input"
-                                       placeholder="Enter due date" data-provider="flatpickr">
+                            <div class="col-lg-4">
+                                <div>
+                                    <label for="datepicker-deadline-input" class="form-label">Deadline</label>
+                                    <input type="text" name="deadline" class="form-control" id="datepicker-deadline-input"
+                                           placeholder="Enter due date" data-provider="flatpickr">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="mb-3 mb-lg-0">
-                                <label for="choices-status-input" class="form-label">Status</label>
-                                <select class="form-select" data-choices data-choices-search-false
-                                        id="choices-status-input">
-                                    <option value="Inprogress" selected>Inprogress</option>
-                                    <option value="Completed">Completed</option>
-                                </select>
+                            <div class="col-lg-4">
+                                <div class="mb-3 mb-lg-0">
+                                    <label for="choices-status-input" class="form-label">Status</label>
+                                    <select name="status" class="form-select" data-choices data-choices-search-false
+                                            id="choices-status-input">
+                                        <option value="Inprogress" selected>Inprogress</option>
+                                        <option value="Completed">Completed</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- end card body -->
                 </div>
-                <!-- end card body -->
-            </div>
-            <!-- end card -->
+                <!-- end card -->
 
-            <div class="text-end mb-4">
-                <button type="submit" class="btn btn-danger w-sm">Cancel</button>
-                <button type="submit" class="btn btn-success w-sm">Create</button>
+                <div class="text-end mb-4">
+                    <a href="{{ route('management.project.index') }}" class="btn btn-danger w-sm">Cancel</a>
+                    <button type="submit" class="btn btn-success w-sm">Create</button>
+                </div>
             </div>
+            <!-- end col -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0"><i class="mdi mdi-account"></i> Client</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <label class="form-label" for="project-title-input">Name</label>
+                                <input type="text" class="form-control" name="client_name" id="project-title-input" placeholder="Enter client name" required>
+                            </div>
+                            <div class="col-5 mb-3">
+                                <label class="form-label" for="project-title-input">Phone Number</label>
+                                <input type="text" class="form-control" name="client_phone" id="project-title-input" placeholder="Enter phone number">
+                            </div>
+                            <div class="col-7 mb-3">
+                                <label class="form-label" for="project-title-input">Email</label>
+                                <input type="email" class="form-control" name="client_email" id="project-title-input" placeholder="Enter email">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0"><i class="mdi mdi-currency-usd"></i> Payment</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <label class="form-label" for="project-title-input">Down Payment</label>
+                                <input type="number" class="form-control" name="down_payment" id="project-title-input" placeholder="Enter down payment">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label class="form-label" for="project-title-input">Repayment</label>
+                                <input type="number" class="form-control" name="repayment" id="project-title-input" placeholder="Enter repayment">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end col -->
         </div>
-        <!-- end col -->
-        <div class="col-lg-4">
-            <div class="card">
-                <div class="card-header">
-                    <h5 class="card-title mb-0"><i class="mdi mdi-account"></i> Client</h5>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <label class="form-label" for="project-title-input">Name</label>
-                            <input type="text" class="form-control" id="project-title-input" placeholder="Enter client name">
-                        </div>
-                        <div class="col-5 mb-3">
-                            <label class="form-label" for="project-title-input">Phone Number</label>
-                            <input type="text" class="form-control" id="project-title-input" placeholder="Enter phone number">
-                        </div>
-                        <div class="col-7 mb-3">
-                            <label class="form-label" for="project-title-input">Email</label>
-                            <input type="email" class="form-control" id="project-title-input" placeholder="Enter email">
-                        </div>
-                    </div>
-                </div>
-                <!-- end card body -->
-            </div>
-            <!-- end card -->
+    </form>
 
-            <div class="card">
-                <div class="card-header">
-                    <h5 class="card-title mb-0"><i class="mdi mdi-currency-usd"></i>  Payment</h5>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <label class="form-label" for="project-title-input">Down Payment</label>
-                            <input type="number" class="form-control" id="project-title-input" placeholder="Enter down payment">
-                        </div>
-                        <div class="col-12 mb-3">
-                            <label class="form-label" for="project-title-input">Repayment</label>
-                            <input type="number" class="form-control" id="project-title-input" placeholder="Enter repayment">
-                        </div>
-                    </div>
-                </div>
-                <!-- end card body -->
-            </div>
-            <!-- end card -->
-        </div>
-        <!-- end col -->
-    </div>
     <!-- end row -->
 
     <!-- Modal -->

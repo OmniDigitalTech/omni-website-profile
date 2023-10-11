@@ -39,88 +39,91 @@
     </div>
 
     <div class="row">
-        <div class="col-xxl-3 col-sm-6 project-card">
-            <div class="card card-height-100">
-                <div class="card-body">
-                    <div class="d-flex flex-column h-100">
-                        <div class="d-flex">
-                            <div class="flex-grow-1">
-                            </div>
-                            <div class="flex-shrink-0">
-                                <div class="d-flex gap-1 align-items-center">
-                                    <div class="dropdown">
-                                        <button
-                                            class="btn btn-link text-muted p-1 mt-n2 py-0 text-decoration-none fs-15 shadow-none"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                            <i data-feather="more-horizontal" class="icon-sm"></i>
-                                        </button>
+        @foreach($projects as $project)
+            <div class="col-xxl-3 col-sm-6 project-card">
+                <div class="card card-height-100">
+                    <div class="card-body">
+                        <div class="d-flex flex-column h-100">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <div class="d-flex gap-1 align-items-center">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-link text-muted p-1 mt-n2 py-0 text-decoration-none fs-15 shadow-none"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <i data-feather="more-horizontal" class="icon-sm"></i>
+                                            </button>
 
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="apps-projects-overview"><i
-                                                    class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a>
-                                            <a class="dropdown-item" href="apps-projects-create"><i
-                                                    class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                               data-bs-target="#removeProjectModal"><i
-                                                    class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Remove</a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <a class="dropdown-item" href="apps-projects-overview"><i
+                                                        class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a>
+                                                <a class="dropdown-item" href="apps-projects-create"><i
+                                                        class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                   data-bs-target="#removeProjectModal"><i
+                                                        class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Remove</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="d-flex mb-2">
-                            <div class="flex-shrink-0 me-3">
-                                <div class="avatar-sm">
+                            <div class="d-flex mb-2">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="avatar-sm">
                                     <span class="avatar-title bg-warning-subtle rounded p-2">
                                         <img src="{{ URL::asset('build/images/brands/slack.png') }}" alt="" class="img-fluid p-1">
                                     </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="mb-1 fs-15"><a href="{{ route('management.project.overview') }}" class="text-body">Slack brand
-                                        logo design</a></h5>
-                                <p class="text-muted text-truncate-two-lines mb-3">Create a Brand logo design for a velzon
-                                    admin.</p>
-                            </div>
-                        </div>
-                        <div class="mt-auto">
-                            <div class="d-flex mb-2">
                                 <div class="flex-grow-1">
-                                    <div>Tasks</div>
-                                </div>
-                                <div class="flex-shrink-0">
-                                    <div><i class="ri-list-check align-bottom me-1 text-muted"></i> 18/42</div>
+                                    <h5 class="mb-1 fs-15"><a href="{{ route('management.project.overview', $project) }}" class="text-body">{{ $project->title }}</a></h5>
+                                    <p class="text-muted text-truncate-two-lines mb-3">{{ $project->description }}</p>
                                 </div>
                             </div>
-                            <div class="progress progress-sm animated-progress">
-                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="34" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 34%;"></div><!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div>
-                    </div>
-
-                </div>
-                <!-- end card body -->
-                <div class="card-footer bg-transparent border-top-dashed py-2">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <div class="badge bg-success-subtle text-success fs-12">Completed</div>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <div class="text-muted">
-                                <i class="ri-calendar-event-fill me-1 align-bottom"></i> 10 Jul, 2021
+                            <div class="mt-auto">
+                                <div class="d-flex mb-2">
+                                    <div class="flex-grow-1">
+                                        <div>Tasks</div>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <div><i class="ri-list-check align-bottom me-1 text-muted"></i> 18/42</div>
+                                    </div>
+                                </div>
+                                <div class="progress progress-sm animated-progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="34" aria-valuemin="0"
+                                         aria-valuemax="100" style="width: 34%;"></div><!-- /.progress-bar -->
+                                </div><!-- /.progress -->
                             </div>
                         </div>
 
                     </div>
+                    <!-- end card body -->
+                    <div class="card-footer bg-transparent border-top-dashed py-2">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                @if($project->status == 'Inprogress')
+                                    <div class="badge bg-warning-subtle text-warning fs-12">{{ $project->status }}</div>
+                                @else
+                                    <div class="badge bg-success-subtle text-success fs-12">{{ $project->status }}</div>
+                                @endif
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="text-muted">
+                                    <i class="ri-calendar-event-fill me-1 align-bottom"></i> {{ $project->deadline }}
+                                </div>
+                            </div>
 
+                        </div>
+
+                    </div>
+                    <!-- end card footer -->
                 </div>
-                <!-- end card footer -->
+                <!-- end card -->
             </div>
-            <!-- end card -->
-        </div>
-        <!-- end col -->
+        @endforeach
     </div>
     <!-- end row -->
 

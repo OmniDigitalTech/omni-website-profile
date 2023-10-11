@@ -20,13 +20,13 @@
                                     </div>
                                     <div class="col-md">
                                         <div>
-                                            <h4 class="fw-bold">Velzon - Admin & Dashboard</h4>
+                                            <h4 class="fw-bold">{{ ucwords($project->title) }}</h4>
                                             <div class="hstack gap-3 flex-wrap">
                                                 <div><i class="ri-building-line align-bottom me-1"></i> Omni Digital Technology</div>
                                                 <div class="vr"></div>
-                                                <div>Create Date : <span class="fw-medium">15 Sep, 2021</span></div>
+                                                <div>Create Date : <span class="fw-medium">{{ $project->created_at }}</span></div>
                                                 <div class="vr"></div>
-                                                <div>Due Date : <span class="fw-medium">29 Dec, 2021</span></div>
+                                                <div>Due Date : <span class="fw-medium">{{ $project->deadline }}</span></div>
                                             </div>
                                         </div>
                                     </div>
@@ -71,25 +71,7 @@
                                 <div class="card-body">
                                     <div class="text-muted">
                                         <h6 class="mb-3 fw-semibold text-uppercase">Summary</h6>
-                                        <p>It will be as simple as occidental in fact, it will be Occidental. To an English
-                                            person, it will seem like simplified English, as a skeptical Cambridge friend of
-                                            mine told me what Occidental is. The European languages are members of the same
-                                            family. Their separate existence is a myth. For science, music, sport, etc,
-                                            Europe uses the same vocabulary. The languages only differ in their grammar,
-                                            their pronunciation and their most common words.</p>
-
-                                        <ul class="ps-4 vstack gap-2">
-                                            <li>Product Design, Figma (Software), Prototype</li>
-                                            <li>Four Dashboards : Ecommerce, Analytics, Project,etc.</li>
-                                            <li>Create calendar, chat and email app pages.</li>
-                                            <li>Add authentication pages.</li>
-                                            <li>Content listing.</li>
-                                        </ul>
-
-                                        <div>
-                                            <button type="button" class="btn btn-link link-success p-0 shadow-none">Read
-                                                more</button>
-                                        </div>
+                                        {!! $project->description !!}
 
                                         <div class="pt-3 border-top border-top-dashed mt-4">
                                             <div class="row">
@@ -97,25 +79,30 @@
                                                 <div class="col-lg-3 col-sm-6">
                                                     <div>
                                                         <p class="mb-2 text-uppercase fw-medium">Create Date :</p>
-                                                        <h5 class="fs-15 mb-0">15 Sep, 2021</h5>
+                                                        <h5 class="fs-15 mb-0">{{ $project->created_at }}</h5>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3 col-sm-6">
                                                     <div>
                                                         <p class="mb-2 text-uppercase fw-medium">Due Date :</p>
-                                                        <h5 class="fs-15 mb-0">29 Dec, 2021</h5>
+                                                        <h5 class="fs-15 mb-0">{{ $project->deadline }}</h5>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3 col-sm-6">
                                                     <div>
                                                         <p class="mb-2 text-uppercase fw-medium">Price :</p>
-                                                        <h5 class="fs-15 mb-0">Rp 5.000.000</h5>
+                                                        <h5 class="fs-15 mb-0">{{ $project->price }}</h5>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3 col-sm-6">
                                                     <div>
                                                         <p class="mb-2 text-uppercase fw-medium">Status :</p>
-                                                        <div class="badge bg-warning fs-12">Inprogress</div>
+                                                        @if($project->status == 'Inprogress')
+                                                            <div class="badge bg-warning fs-12">{{ $project->status }}</div>
+                                                        @else
+                                                            <div class="badge bg-success fs-12">{{ $project->status }}</div>
+                                                        @endif
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -232,15 +219,15 @@
                         <div class="col-xl-3 col-lg-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4>Mr. Alexis Mondo</h4>
+                                    <h4>{{ ucwords(@$project->client->name) }}</h4>
                                     <div class="row">
                                         <div class="col-5">
                                             <span>Contact</span> <br>
-                                            <span>081284774555</span>
+                                            <span>{{ @$project->client->phone }}</span>
                                         </div>
                                         <div class="col-7">
                                             <span>Email</span> <br>
-                                            <span>alexissmond@gmail.com</span>
+                                            <span>{{ @$project->client->email }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -256,30 +243,24 @@
                                     <div class="table-responsive table-card">
                                         <table class="table mb-0">
                                             <tbody>
-                                            <tr>
-                                                <td class="fw-medium">
-                                                    DP <br>
-                                                    29 Oktober 2024
-                                                </td>
-                                                <td class="align-middle text-center">
-                                                    Rp 500.000
-                                                </td>
-                                                <td class="align-middle text-center">
-                                                    <div class="badge bg-success-subtle text-success fs-12">Paid</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="fw-medium">
-                                                    Repayment <br>
-                                                    29 Oktober 2024
-                                                </td>
-                                                <td class="align-middle text-center">
-                                                    Rp 2.100.000
-                                                </td>
-                                                <td class="align-middle text-center">
-                                                    <div class="badge bg-success-subtle text-success fs-12">Paid</div>
-                                                </td>
-                                            </tr>
+                                            @foreach($project->payment as $payment)
+                                                <tr>
+                                                    <td class="fw-medium">
+                                                        {{ $payment->type }} <br>
+                                                        {{ $payment->created_at }}
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        {{ $payment->value }}
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        @if($payment->status == \App\Models\Payment::PAID)
+                                                            <div class="badge bg-success-subtle text-success fs-12">{{ $payment->status }}</div>
+                                                        @else
+                                                            <div class="badge bg-warning-subtle text-warning fs-12">{{ $payment->status }}</div>
+                                                        @endif
+                                                    </td>
+                                                </tr>
+                                            @endforeach
                                             </tbody>
                                         </table>
                                         <!--end table-->

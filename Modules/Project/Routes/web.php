@@ -15,6 +15,7 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
     Route::prefix('project')->group(function (){
         Route::get('/', 'ProjectController@index')->name('management.project.index');
         Route::get('/create', 'ProjectController@create')->name('management.project.create');
-        Route::get('/overview', 'ProjectController@overview')->name('management.project.overview');
+        Route::post('/store', 'ProjectController@store')->name('management.project.store');
+        Route::get('/overview/{project}', 'ProjectController@overview')->name('management.project.overview');
     });
 });
