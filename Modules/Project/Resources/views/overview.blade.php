@@ -230,36 +230,28 @@
                                     <div class="table-responsive table-card">
                                         <table class="table mb-0">
                                             <tbody>
-                                                <tr>
-                                                    <td class="fw-medium">
-                                                        Server <br>
-                                                        29 Oktober 2024
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <div class="badge bg-success-subtle text-success fs-12">Active</div>
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <a href="" class="btn btn-sm btn-danger"><i class="mdi mdi-trash-can"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="fw-medium">
-                                                        Domain .com <br>
-                                                        29 Oktober 2024
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <div class="badge bg-success-subtle text-success fs-12">Active</div>
-                                                    </td>
-                                                    <td class="align-middle text-center">
-                                                        <a href="" class="btn btn-sm btn-danger"><i class="mdi mdi-trash-can"></i></a>
-                                                    </td>
-                                                </tr>
+                                                @foreach($project->subscriptions as $subscription)
+                                                    <tr>
+                                                        <td class="fw-medium">
+                                                            {{ $subscription->name }} <br>
+                                                            {{ $subscription->billing_date }}
+                                                        </td>
+                                                        <td class="align-middle text-center">
+                                                            <div class="badge bg-success-subtle text-success fs-12">Active</div>
+                                                        </td>
+                                                        <td class="align-middle text-center">
+                                                            <a href="" class="btn btn-sm btn-danger"><i class="mdi mdi-trash-can"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
                                             </tbody>
                                         </table>
                                         <!--end table-->
                                     </div>
                                     <div class="mt-4 pt-2 hstack gap-2">
-                                        <a href="#!" class="btn btn-primary w-100">Add Subscription</a>
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                                data-bs-target="#addSubscriptionModal"><i class="ri-add-line me-1 align-bottom"></i>
+                                            Add Subscription</button>
                                     </div>
                                 </div>
                                 <!-- end card body -->
@@ -730,6 +722,47 @@
         <!-- end col -->
     </div>
     <!-- end row -->
+    <!-- Modal -->
+    <div class="modal fade" id="addSubscriptionModal" tabindex="-1" aria-labelledby="addSubscriptionModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header p-3 ps-4 bg-success-subtle">
+                    <h5 class="modal-title" id="inviteMembersModalLabel"><i class="mdi mdi-bell"></i> Subscription</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="{{ route('management.project.subscription.store', $project) }}" method="post">
+                    @csrf
+                    <div class="modal-body p-4">
+                        <div class="mb-3">
+                            <label class="form-label" for="project-title-input">Name</label>
+                            <input type="text" class="form-control" name="name" id="project-title-input" placeholder="Enter project title" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="choices-privacy-status-input" class="form-label">Subscription</label>
+                            <select name="type" class="form-select" data-choices data-choices-search-false
+                                    id="choices-privacy-status-input">
+                                <option value="{{ \App\Models\Subscription::YEARLY }}" selected>{{ \App\Models\Subscription::YEARLY }}</option>
+                                <option value="{{ \App\Models\Subscription::MONTHLY }}">{{ \App\Models\Subscription::MONTHLY }}</option>
+                                <option value="{{ \App\Models\Subscription::DAILY }}">{{ \App\Models\Subscription::DAILY }}</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="datepicker-deadline-input" class="form-label">Billing Date</label>
+                            <input type="text" name="billing_date" class="form-control" id="datepicker-deadline-input"
+                                   placeholder="Enter due date" data-provider="flatpickr">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light w-xs" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-success w-xs">Add</button>
+                    </div>
+                </form>
+            </div>
+            <!-- end modal-content -->
+        </div>
+        <!-- modal-dialog -->
+    </div>
 
 @endsection
 @section('script')

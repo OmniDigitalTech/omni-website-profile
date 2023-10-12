@@ -22,5 +22,9 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
             Route::get('/create/{project}', 'InvoiceController@create')->name('management.project.invoice.create');
             Route::post('/store/{project}', 'InvoiceController@store')->name('management.project.invoice.store');
         });
+
+        Route::prefix('subscription')->group(function (){
+            Route::post('/store/{project}', 'SubscriptionController@store')->name('management.project.subscription.store');
+        });
     });
 });

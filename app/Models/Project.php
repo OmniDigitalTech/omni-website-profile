@@ -30,4 +30,8 @@ class Project extends Model
     public function invoices(){
         return $this->morphMany(Invoice::class, 'invoiceable');
     }
+
+    public function subscriptions(){
+        return $this->morphMany(Subscription::class, 'subscriptionable');
+    }
 }
