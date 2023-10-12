@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <h5 class="mb-1 fs-15"><a href="{{ route('management.project.overview', $project) }}" class="text-body">{{ $project->title }}</a></h5>
-                                    <p class="text-muted text-truncate-two-lines mb-3">{{ $project->description }}</p>
+                                    <p class="text-muted text-truncate-two-lines mb-3">{{ strip_tags($project->description) }}</p>
                                 </div>
                             </div>
                             <div class="mt-auto">

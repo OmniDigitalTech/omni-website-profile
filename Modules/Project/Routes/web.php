@@ -17,5 +17,10 @@ Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))-
         Route::get('/create', 'ProjectController@create')->name('management.project.create');
         Route::post('/store', 'ProjectController@store')->name('management.project.store');
         Route::get('/overview/{project}', 'ProjectController@overview')->name('management.project.overview');
+
+        Route::prefix('invoice')->group(function (){
+            Route::get('/create/{project}', 'InvoiceController@create')->name('management.project.invoice.create');
+            Route::post('/store/{project}', 'InvoiceController@store')->name('management.project.invoice.store');
+        });
     });
 });

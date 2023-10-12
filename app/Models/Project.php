@@ -13,7 +13,7 @@ class Project extends Model
     protected $fillable = [
         'title',
         'thumbnail',
-        'description;',
+        'description',
         'price',
         'deadline',
         'status',
@@ -23,7 +23,11 @@ class Project extends Model
         return $this->morphOne(Client::class, 'clientable');
     }
 
-    public function payment(){
+    public function payments(){
         return $this->morphMany(Payment::class, 'paymentable');
+    }
+
+    public function invoices(){
+        return $this->morphMany(Invoice::class, 'invoiceable');
     }
 }

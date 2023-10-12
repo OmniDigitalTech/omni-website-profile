@@ -120,7 +120,7 @@
                                             <h5 class="fw-semibold text-uppercase align-middle">Payment History</h5>
                                         </div>
                                         <div class="col-6">
-                                            <a href="" class="btn btn-sm btn-success float-end"><i class="ri-add-line align-bottom me-1"></i>Add Invoice</a>
+                                            <a href="{{ route('management.project.invoice.create', $project) }}" class="btn btn-sm btn-success float-end"><i class="ri-add-line align-bottom me-1"></i>Add Invoice</a>
                                         </div>
                                     </div>
                                 </div>
@@ -135,8 +135,7 @@
                                                         <label class="form-check-label" for="cardtableCheck"></label>
                                                     </div>
                                                 </th>
-                                                <th scope="col">Id</th>
-                                                <th scope="col">Name</th>
+                                                <th scope="col">Code</th>
                                                 <th scope="col">Date</th>
                                                 <th scope="col">Total</th>
                                                 <th scope="col">Status</th>
@@ -144,70 +143,23 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="cardtableCheck01">
-                                                        <label class="form-check-label" for="cardtableCheck01"></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#" class="fw-semibold">#VL2110</a></td>
-                                                <td>William Elmore</td>
-                                                <td>07 Oct, 2021</td>
-                                                <td>$24.05</td>
-                                                <td><span class="badge bg-success">Paid</span></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-light">Details</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="cardtableCheck02">
-                                                        <label class="form-check-label" for="cardtableCheck02"></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#" class="fw-semibold">#VL2109</a></td>
-                                                <td>Georgie Winters</td>
-                                                <td>07 Oct, 2021</td>
-                                                <td>$26.15</td>
-                                                <td><span class="badge bg-success">Paid</span></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-light">Details</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="cardtableCheck03">
-                                                        <label class="form-check-label" for="cardtableCheck03"></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#" class="fw-semibold">#VL2108</a></td>
-                                                <td>Whitney Meier</td>
-                                                <td>06 Oct, 2021</td>
-                                                <td>$21.25</td>
-                                                <td><span class="badge bg-danger">Refund</span></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-light">Details</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="cardtableCheck04">
-                                                        <label class="form-check-label" for="cardtableCheck04"></label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="#" class="fw-semibold">#VL2107</a></td>
-                                                <td>Justin Maier</td>
-                                                <td>05 Oct, 2021</td>
-                                                <td>$25.03</td>
-                                                <td><span class="badge bg-success">Paid</span></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-light">Details</button>
-                                                </td>
-                                            </tr>
+                                            @foreach($project->invoices as $invoice)
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="cardtableCheck{{ $invoice->id }}">
+                                                            <label class="form-check-label" for="cardtableCheck{{ $invoice->id }}"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td><a href="#" class="fw-semibold">{{ $invoice->code }}</a></td>
+                                                    <td>{{ $invoice->created_at }}</td>
+                                                    <td>{{ $invoice->TotalAmount }}</td>
+                                                    <td><span class="badge bg-success">{{ $invoice->status }}</span></td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-sm btn-light">Details</button>
+                                                    </td>
+                                                </tr>
+                                            @endforeach
                                             </tbody>
                                         </table>
                                     </div>
@@ -243,10 +195,10 @@
                                     <div class="table-responsive table-card">
                                         <table class="table mb-0">
                                             <tbody>
-                                            @foreach($project->payment as $payment)
+                                            @foreach($project->payments as $payment)
                                                 <tr>
                                                     <td class="fw-medium">
-                                                        {{ $payment->type }} <br>
+                                                        {{ ucwords(strtolower($payment->type)) }} <br>
                                                         {{ $payment->created_at }}
                                                     </td>
                                                     <td class="align-middle text-center">

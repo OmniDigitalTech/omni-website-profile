@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->integer('qty')->default(1);
-            $table->float('price')->default(0);
+            $table->decimal('price', 14 ,2)->default(0);
             $table->timestamps();
         });
     }

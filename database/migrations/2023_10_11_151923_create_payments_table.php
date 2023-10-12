@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->nullableMorphs('paymentable');
             $table->string('type');
-            $table->float('value')->default(0);
+            $table->decimal('value', 14, 2)->default(0);
             $table->string('status');
             $table->timestamps();
         });

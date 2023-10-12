@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
+            $table->nullableMorphs('invoiceable');
             $table->string('code');
             $table->string('status');
             $table->softDeletes();

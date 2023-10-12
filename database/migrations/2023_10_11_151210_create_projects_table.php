@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('thumbnail')->nullable();
             $table->text('description')->nullable();
-            $table->float('price')->default(0);
+            $table->decimal('price', 14,2)->default(0);
             $table->date('deadline');
             $table->string('status');
             $table->softDeletes();
