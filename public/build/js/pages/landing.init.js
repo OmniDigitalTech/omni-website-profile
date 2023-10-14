@@ -87,10 +87,10 @@ function check() {
 
     var i = 0;
     Array.from(month).forEach(function (mon) {
-        if (checkBox.checked == true) {
+        if (checkBox.checked === true) {
             annual[i].style.display = "block";
             mon.style.display = "none";
-        } else if (checkBox.checked == false) {
+        } else if (checkBox.checked === false) {
             annual[i].style.display = "none";
             mon.style.display = "block";
         }

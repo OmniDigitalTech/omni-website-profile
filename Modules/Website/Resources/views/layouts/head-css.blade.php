@@ -9,4 +9,8 @@
 <link href="{{ URL::asset('build/css/app.min.css') }}"  rel="stylesheet" type="text/css" />
 <!-- custom Css-->
 <link href="{{ URL::asset('build/css/custom.min.css') }}"  rel="stylesheet" type="text/css" />
+<!-- aos css -->
+<link rel="stylesheet" href="{{ URL::asset('build/libs/aos/aos.css')}}" />
+<!--Swiper slider css-->
+<link href="{{ URL::asset('build/libs/swiper/swiper-bundle.min.css')}}" rel="stylesheet" type="text/css" />
 {{-- @yield('css') --}}

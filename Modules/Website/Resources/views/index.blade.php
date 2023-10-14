@@ -67,13 +67,16 @@
                     <div class="row justify-content-between align-items-center">
                         <div class="col-lg-6">
                             <div>
-                                <h1 class="display-6 fw-semibold text-capitalize mb-3 lh-base">Find your next job and build your dream here</h1>
-                                <p class="lead text-muted lh-base mb-4">Find jobs, create trackable resumes and enrich your applications. Carefully crafted after analyzing the needs of different industries.</p>
+                                <h1 class="display-6 fw-semibold text-capitalize mb-3 lh-base">Melangkah Ke Dunia Digital Dengan Penuh Persiapan.</h1>
+                                <p class="lead text-muted lh-base mb-4">
+                                    Kami akan memastikan kehadiran online anda dalam dunia digital website dengan efektif, menarik,
+                                    up to date dan  kreativitas tanpa batas.
+                                </p>
                             </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-4">
-                            <div class="position-relative home-img text-center mt-5 mt-lg-0">
+                            <div data-aos="fade-left" class="position-relative home-img text-center mt-5 mt-lg-0">
                                 <img src="{{URL::asset('build/images/job-profile2.png')}}" alt="" class="user-img">
 
                                 <div class="circle-effect">
@@ -156,10 +159,12 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <div class="text-center mb-5">
-                                <h1 class="mb-3 ff-secondary fw-semibold lh-base">A Digital web design studio creating modern & engaging online</h1>
-                                <p class="text-muted">To achieve this, it would be necessary to have uniform grammar,
-                                    pronunciation and more common words. If several languages coalesce the grammar</p>
+                            <div class="text-center mb-5" data-aos="fade-down">
+                                <h1 class="mb-3 ff-secondary fw-semibold lh-base">Layanan Unggulan untuk Kesuksesan Anda</h1>
+                                <p class="text-muted">
+                                    Dengan beberapa layanan kami yang paling unggul yaitu desain website kreatif, pengembangan berkualitas, pemeliharaan pasca-launch, custom kebutuhan dan dukungan konsultasi.
+                                    Selain layanan tersebut berikut layanan kami lainnya untuk menuju kesuksesan online Anda.
+                                </p>
                             </div>
                         </div>
                         <!-- end col -->
@@ -167,7 +172,7 @@
                     <!-- end row -->
 
                     <div class="row g-3">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
@@ -177,16 +182,16 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="fs-18">Creative Design</h5>
-                                    <p class="text-muted my-3 ff-secondary">The creative design includes designs that are unique, effective and memorable.</p>
-                                    <div>
-                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
-                                    </div>
+                                    <h5 class="fs-18">Desain Kreatif</h5>
+                                    <p class="text-muted my-3 ff-secondary">Desain yang menarik dan efektif untuk menciptakan kesan pertama yang baik bagi pengunjung situs.</p>
+{{--                                    <div>--}}
+{{--                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
@@ -196,16 +201,18 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="fs-18">Unlimited Colors</h5>
-                                    <p class="text-muted my-3 ff-secondary">The collection of rules and guidelines which designers use to communicate with users through appealing.</p>
-                                    <div>
-                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
-                                    </div>
+                                    <h5 class="fs-18">Teknologi Terkini</h5>
+                                    <p class="text-muted my-3 ff-secondary">Kami selalu mengikuti perkembangan terbaru dalam teknologi web, sehingga situs Anda
+                                        akan selalu menggunakan teknologi terkini dan terbaik.
+                                    </p>
+{{--                                    <div>--}}
+{{--                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
@@ -215,16 +222,17 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="fs-18">Strategy Solutions</h5>
-                                    <p class="text-muted my-3 ff-secondary">Business development firm that provides strategic planning, market research services and project.</p>
-                                    <div>
-                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
-                                    </div>
+                                    <h5 class="fs-18">SEO-friendly</h5>
+                                    <p class="text-muted my-3 ff-secondary">Kami memastikan bahwa situs web yang kami buat dioptimalkan untuk mesin pencari
+                                        dalam mendapatkan peringkat tinggi di hasil pencarian Google.</p>
+{{--                                    <div>--}}
+{{--                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1600">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
@@ -234,16 +242,18 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="fs-18">Awesome Support</h5>
-                                    <p class="text-muted my-3 ff-secondary">Awesome Support is the most versatile and feature-rich support plugin for all version.</p>
-                                    <div>
-                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
-                                    </div>
+                                    <h5 class="fs-18">Pemeliharaan dan Pembaruan</h5>
+                                    <p class="text-muted my-3 ff-secondary">Kami tidak hanya membuat situs web untuk Anda, tetapi juga dapat membantu Anda dalam
+                                        pemeliharaan dan pembaruan berkelanjutan sehingga situs Anda tetap relevan.
+                                    </p>
+{{--                                    <div>--}}
+{{--                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1800">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
@@ -253,16 +263,18 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="fs-18">Truly Multipurpose</h5>
-                                    <p class="text-muted my-3 ff-secondary">You usually get a broad range of options to play with. This enables you to use a single theme across multiple.</p>
-                                    <div>
-                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
-                                    </div>
+                                    <h5 class="fs-18">Dukungan Pelanggan 24 Jam</h5>
+                                    <p class="text-muted my-3 ff-secondary">Kepuasan pelanggan adalah prioritas utama, dengan
+                                        dukungan pelanggan yang responsif dan berkualitas selama seluruh
+                                        siklus proyek, dari perencanaan hingga peluncuran dan pasca-peluncuran.</p>
+{{--                                    <div>--}}
+{{--                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
@@ -272,17 +284,17 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="fs-18">Easy to customize</h5>
-                                    <p class="text-muted my-3 ff-secondary">Personalise your own website, no matter what theme and what customization options.</p>
-                                    <div>
-                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
-                                    </div>
+                                    <h5 class="fs-18">Permintaan Kustom</h5>
+                                    <p class="text-muted my-3 ff-secondary">kami bisa
+                                        menyesuaikan solusi sesuai dengan kebutuhan dan tujuan spesifik Anda.</p>
+{{--                                    <div>--}}
+{{--                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>
                         <!-- end col -->
-
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2200">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
@@ -292,16 +304,18 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="fs-18">Responsive & Clean Design</h5>
-                                    <p class="text-muted my-3 ff-secondary">Responsive design is a graphic user interface (GUI) design approach used to create content.</p>
-                                    <div>
-                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
-                                    </div>
+                                    <h5 class="fs-18">Desain Responsif dan Professional</h5>
+                                    <p class="text-muted my-3 ff-secondary">Kami mengutamakan responsif dan profesional pada pembuatan web
+                                        untuk memastikan pengalaman pengguna yang optimal pada ber.
+                                    </p>
+{{--                                    <div>--}}
+{{--                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2400">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
@@ -311,16 +325,16 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="fs-18">Google Font Collection</h5>
-                                    <p class="text-muted my-3 ff-secondary">Google Fonts is a collection of 915 fonts, all available to use for free on your website.</p>
-                                    <div>
-                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
-                                    </div>
+                                    <h5 class="fs-18">Bergaransi</h5>
+                                    <p class="text-muted my-3 ff-secondary">Kami mempunyai garansi pada paket-paket yang kami tawarkan, seperti garansi 2 bulan.</p>
+{{--                                    <div>--}}
+{{--                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2600">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
@@ -330,11 +344,11 @@
                                     </div>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <h5 class="fs-18">Top Industry Specialists</h5>
-                                    <p class="text-muted my-3 ff-secondary">An industrial specialist works with industrial operations to ensure that manufacturing facilities work.</p>
-                                    <div>
-                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>
-                                    </div>
+                                    <h5 class="fs-18">Harga Terjangkau</h5>
+                                    <p class="text-muted my-3 ff-secondary">Banyak penawaran paket dari kami untuk kesuaian minat anda atau permintaan paket kustom.</p>
+{{--                                    <div>--}}
+{{--                                        <a href="#" class="fs-13 fw-medium">Learn More <i class="ri-arrow-right-s-line align-bottom"></i></a>--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>
@@ -588,20 +602,24 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="text-center mb-5">
-                                <h3 class="mb-3 fw-semibold">Choose the plan that's right for you</h3>
-                                <p class="text-muted mb-4">Simple pricing. No hidden fees. Advanced features for you
-                                    business.</p>
-
+                                <h3 class="mb-3 fw-semibold">Pilihan Paket Sesuai Kebutuhan Anda</h3>
+                                <p class="text-muted mb-4">
+                                    mulai dari Paket Dasar yang hemat hingga Paket Eksklusif yang dirancang khusus untuk bisnis besar.
+                                    Kami punya solusi sesuai dengan kebutuhan Anda.
+                                </p>
                                 <div class="d-flex justify-content-center align-items-center">
                                     <div>
-                                        <h5 class="fs-14 mb-0">Month</h5>
+                                        <h5 class="fs-14 mb-0">Bulanan</h5>
                                     </div>
                                     <div class="form-check form-switch fs-20 ms-3 " onclick="check()">
                                         <input class="form-check-input" type="checkbox" id="plan-switch">
                                         <label class="form-check-label" for="plan-switch"></label>
                                     </div>
                                     <div>
-                                        <h5 class="fs-14 mb-0">Annual <span class="badge bg-success-subtle text-success">Save 20%</span></h5>
+                                        <h5 class="fs-14 mb-0">
+                                            Tahunan
+{{--                                            <span class="badge bg-success-subtle text-success">Save 20%</span>--}}
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
@@ -610,317 +628,668 @@
                     </div>
                     <!-- end row -->
 
-                    <div class="row gy-4">
-                        <div class="col-lg-4">
-                            <div class="card plan-box mb-0">
-                                <div class="card-body p-4 m-2">
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-grow-1">
-                                            <h5 class="mb-1 fw-semibold">Basic Plan</h5>
-                                            <p class="text-muted mb-0">For Startup</p>
-                                        </div>
-                                        <div class="avatar-sm">
-                                            <div class="avatar-title bg-light rounded-circle text-primary">
-                                                <i class="ri-book-mark-line fs-20"></i>
+                    <div class="swiper effect-coverflow-swiper rounded pb-5 swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card plan-box mb-0">
+                                    <div class="card-body p-4 m-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1">
+                                                <h5 class="mb-1 fw-semibold">Paket Silver 1</h5>
+                                                <p class="text-muted mb-0">Landing Page / Personal / Company Profile</p>
+                                            </div>
+                                            <div class="avatar-sm">
+                                                <div class="avatar-title bg-light rounded-circle text-primary">
+                                                    <i class="ri-book-mark-line fs-20"></i>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="py-4 text-center">
-                                        <h1 class="month"><sup><small>$</small></sup><span class="ff-secondary fw-bold">19</span> <span
-                                                class="fs-13 text-muted">/Month</span></h1>
-                                        <h1 class="annual"><sup><small>$</small></sup><span class="ff-secondary fw-bold">171</span> <span
-                                                class="fs-13 text-muted">/Year</span></h1>
-                                    </div>
+                                        <div class="py-4 text-center">
+                                            <h1 class="month"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">210.000</span> <span
+                                                    class="fs-13 text-muted">/Bulan</span></h1>
+                                            <h1 class="annual"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">2.400.000</span> <span
+                                                    class="fs-13 text-muted">/Tahun</span></h1>
+                                        </div>
 
-                                    <div>
-                                        <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                        <div>
+                                            <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <b>1</b> Halaman
+                                                        </div>
                                                     </div>
-                                                    <div class="flex-grow-1">
-                                                        Upto <b>3</b> Projects
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Garansi <b>1</b> Bulan
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Gratis Maintenance <b>1</b> Bulan
+                                                        </div>
                                                     </div>
-                                                    <div class="flex-grow-1">
-                                                        Upto <b>299</b> Customers
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free domain (.my.id)
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-danger me-1">
+                                                            <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free revisi <b>2</b> kali selama masa garansi
+                                                        </div>
                                                     </div>
-                                                    <div class="flex-grow-1">
-                                                        Scalable Bandwidth
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Menggunakan Virtual Private Server
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>5</b> FTP Login
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-danger me-1">
-                                                        <i class="ri-close-circle-fill fs-15 align-middle"></i>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>24/7</b> Support
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-danger me-1">
-                                                        <i class="ri-close-circle-fill fs-15 align-middle"></i>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>Unlimited</b> Storage
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-danger me-1">
-                                                        <i class="ri-close-circle-fill fs-15 align-middle"></i>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        Domain
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div class="mt-4">
-                                            <a href="javascript:void(0);" class="btn btn-soft-success w-100">Get
-                                                Started</a>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-4">
+                                                <a href="javascript:void(0);" class="btn btn-soft-success w-100">Pesan</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-4">
-                            <div class="card plan-box mb-0 ribbon-box right">
-                                <div class="card-body p-4 m-2">
-                                    <div class="ribbon-two ribbon-two-danger"><span>Popular</span></div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-grow-1">
-                                            <h5 class="mb-1 fw-semibold">Pro Business</h5>
-                                            <p class="text-muted mb-0">Professional plans</p>
-                                        </div>
-                                        <div class="avatar-sm">
-                                            <div class="avatar-title bg-light rounded-circle text-primary">
-                                                <i class="ri-medal-fill fs-20"></i>
+                            <!--end col-->
+                            <div class="swiper-slide">
+                                <div class="card plan-box mb-0 ribbon-box right">
+                                    <div class="card-body p-4 m-2">
+                                        <div class="ribbon-two ribbon-two-danger"><span>Popular</span></div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1">
+                                                <h5 class="mb-1 fw-semibold">Paket Silver 2</h5>
+                                                <p class="text-muted mb-0">Landing Page / Personal / Company Profile</p>
+                                            </div>
+                                            <div class="avatar-sm">
+                                                <div class="avatar-title bg-light rounded-circle text-primary">
+                                                    <i class="ri-medal-fill fs-20"></i>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="py-4 text-center">
-                                        <h1 class="month"><sup><small>$</small></sup><span class="ff-secondary fw-bold">29</span> <span
-                                                class="fs-13 text-muted">/Month</span></h1>
-                                        <h1 class="annual"><sup><small>$</small></sup><span class="ff-secondary fw-bold">261</span> <span
-                                                class="fs-13 text-muted">/Year</span></h1>
-                                    </div>
+                                        <div class="py-4 text-center">
+                                            <h1 class="month"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">230.000</span> <span
+                                                    class="fs-13 text-muted">/Bulan</span></h1>
+                                            <h1 class="annual"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">2.600.000</span> <span
+                                                    class="fs-13 text-muted">/Tahun</span></h1>
+                                        </div>
 
-                                    <div>
-                                        <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                        <div>
+                                            <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <b>3</b> Halaman
+                                                        </div>
                                                     </div>
-                                                    <div class="flex-grow-1">
-                                                        Upto <b>15</b> Projects
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Garansi <b>1</b> Bulan
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free Maintenance <b>1</b> Bulan
+                                                        </div>
                                                     </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>Unlimited</b> Customers
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free domain (.my.id)
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <b>24/7</b> Support
+                                                        </div>
                                                     </div>
-                                                    <div class="flex-grow-1">
-                                                        Scalable Bandwidth
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-danger me-1">
+                                                            <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free revisi <b>2</b> kali selama masa garansi.
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Menggunakan Virtual Private Server
+                                                        </div>
                                                     </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>12</b> FTP Login
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>24/7</b> Support
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-danger me-1">
-                                                        <i class="ri-close-circle-fill fs-15 align-middle"></i>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>Unlimited</b> Storage
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-danger me-1">
-                                                        <i class="ri-close-circle-fill fs-15 align-middle"></i>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        Domain
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div class="mt-4">
-                                            <a href="javascript:void(0);" class="btn btn-soft-success w-100">Get
-                                                Started</a>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-4">
+                                                <a href="javascript:void(0);" class="btn btn-soft-success w-100">Pesan</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--end col-->
-                        <div class="col-lg-4">
-                            <div class="card plan-box mb-0">
-                                <div class="card-body p-4 m-2">
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-grow-1">
-                                            <h5 class="mb-1 fw-semibold">Platinum Plan</h5>
-                                            <p class="text-muted mb-0">Enterprise Businesses</p>
-                                        </div>
-                                        <div class="avatar-sm">
-                                            <div class="avatar-title bg-light rounded-circle text-primary">
-                                                <i class="ri-stack-fill fs-20"></i>
+                            <!--end col-->
+                            <div class="swiper-slide">
+                                <div class="card plan-box mb-0">
+                                    <div class="card-body p-4 m-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1">
+                                                <h5 class="mb-1 fw-semibold">Paket Silver 3</h5>
+                                                <p class="text-muted mb-0">Landing Page / Personal / Company Profile</p>
+                                            </div>
+                                            <div class="avatar-sm">
+                                                <div class="avatar-title bg-light rounded-circle text-primary">
+                                                    <i class="ri-stack-fill fs-20"></i>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="py-4 text-center">
-                                        <h1 class="month"><sup><small>$</small></sup><span class="ff-secondary fw-bold">39</span> <span
-                                                class="fs-13 text-muted">/Month</span></h1>
-                                        <h1 class="annual"><sup><small>$</small></sup><span class="ff-secondary fw-bold">351</span> <span
-                                                class="fs-13 text-muted">/Year</span></h1>
-                                    </div>
+                                        <div class="py-4 text-center">
+                                            <h1 class="month"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">250.000</span> <span
+                                                    class="fs-13 text-muted">/Bulan</span></h1>
+                                            <h1 class="annual"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">2.800.000</span> <span
+                                                    class="fs-13 text-muted">/Tahun</span></h1>
+                                        </div>
 
-                                    <div>
-                                        <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                        <div>
+                                            <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <b>5</b> Halaman
+                                                        </div>
                                                     </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>Unlimited</b> Projects
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Garansi <b>1</b> bulan
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free Maintenance <b>1</b> bulan
+                                                        </div>
                                                     </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>Unlimited</b> Customers
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free domain (.my.id)
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free revisi <b>2</b> kali selama masa garansi
+                                                        </div>
                                                     </div>
-                                                    <div class="flex-grow-1">
-                                                        Scalable Bandwidth
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Menggunakan Virtual Private Server
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>Unlimited</b> FTP Login
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>24/7</b> Support
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <b>Unlimited</b> Storage
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 text-success me-1">
-                                                        <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        Domain
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div class="mt-4">
-                                            <a href="javascript:void(0);" class="btn btn-soft-success w-100">Get
-                                                Started</a>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-4">
+                                                <a href="javascript:void(0);" class="btn btn-soft-success w-100">Pesan</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!--end col-->
+                            <div class="swiper-slide">
+                                <div class="card plan-box mb-0">
+                                    <div class="card-body p-4 m-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1">
+                                                <h5 class="mb-1 fw-semibold">Paket Gold 1</h5>
+                                                <p class="text-muted mb-0">Landing Page / Personal / Company Profile</p>
+                                            </div>
+                                            <div class="avatar-sm">
+                                                <div class="avatar-title bg-light rounded-circle text-primary">
+                                                    <i class="ri-book-mark-line fs-20"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="py-4 text-center">
+                                            <h1 class="month"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">350.000</span> <span
+                                                    class="fs-13 text-muted">/Bulan</span></h1>
+                                            <h1 class="annual"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">4.000.000</span> <span
+                                                    class="fs-13 text-muted">/Tahun</span></h1>
+                                        </div>
+
+                                        <div>
+                                            <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <b>5</b> halaman
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Garansi <b>2</b> bulan
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free maintenance selama <b>2</b> bulan
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free domain (.ac.id, .sch.id, .or.id, .web.id, .my.id)
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-danger me-1">
+                                                            <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Revisi <b>3</b> kali selama masa garansi
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-danger me-1">
+                                                            <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Menggunakan Virtual Private Server
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-4">
+                                                <a href="javascript:void(0);" class="btn btn-soft-success w-100">Pesan</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="swiper-slide">
+                                <div class="card plan-box mb-0 ribbon-box right">
+                                    <div class="card-body p-4 m-2">
+                                        <div class="ribbon-two ribbon-two-danger"><span>Popular</span></div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1">
+                                                <h5 class="mb-1 fw-semibold">Paket Gold 2</h5>
+                                                <p class="text-muted mb-0">landing Page / Personal / Company Profile</p>
+                                            </div>
+                                            <div class="avatar-sm">
+                                                <div class="avatar-title bg-light rounded-circle text-primary">
+                                                    <i class="ri-medal-fill fs-20"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="py-4 text-center">
+                                            <h1 class="month"><sup><small>RP</small></sup><span class="ff-secondary fw-bold">550.000</span> <span
+                                                    class="fs-13 text-muted">/Bulan</span></h1>
+                                            <h1 class="annual"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">6.600.000</span> <span
+                                                    class="fs-13 text-muted">/Tahun</span></h1>
+                                        </div>
+
+                                        <div>
+                                            <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Full page (home, about, service, layanan, contact) bisa request page
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Garansi <b>2</b> bulan
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free maintenance selama <b>2</b> bulan
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Domain (.com, .net, .id, .xyz, .ac.id, .sch.id, .or.id, .web.id, .my.id)
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Revisi <b>3</b> kali selama masa garansi
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-danger me-1">
+                                                            <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Menggunakan Virtual Private Server
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-4">
+                                                <a href="javascript:void(0);" class="btn btn-soft-success w-100">Pesan</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="swiper-slide">
+                                <div class="card plan-box mb-0">
+                                    <div class="card-body p-4 m-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1">
+                                                <h5 class="mb-1 fw-semibold">Paket Platinum 1</h5>
+                                                <p class="text-muted mb-0">Booking / Portal Berita</p>
+                                            </div>
+                                            <div class="avatar-sm">
+                                                <div class="avatar-title bg-light rounded-circle text-primary">
+                                                    <i class="ri-stack-fill fs-20"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="py-4 text-center">
+                                            <h1 class="month"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">700.000</span> <span
+                                                    class="fs-13 text-muted">/Bulan</span></h1>
+                                            <h1 class="annual"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">8.400.000</span> <span
+                                                    class="fs-13 text-muted">/Tahun</span></h1>
+                                        </div>
+
+                                        <div>
+                                            <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Full page (home, about, service, layanan, contact) bisa request page
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Garansi 2 Bulan
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free Maintenance selama 2 bulan
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Domain (.com, .net, .id, .xyz, .ac.id, .sch.id, .or.id, .web.id, .my.id)
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Revisi <b>3</b> kali selama masa garansi
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Menggunakan Virtual Private Server
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-4">
+                                                <a href="javascript:void(0);" class="btn btn-soft-success w-100">Pesan</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="swiper-slide">
+                                <div class="card plan-box mb-0">
+                                    <div class="card-body p-4 m-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1">
+                                                <h5 class="mb-1 fw-semibold">Paket Platinum 2</h5>
+                                                <p class="text-muted mb-0">Booking / Portal berita / Toko Online Sederhana</p>
+                                            </div>
+                                            <div class="avatar-sm">
+                                                <div class="avatar-title bg-light rounded-circle text-primary">
+                                                    <i class="ri-stack-fill fs-20"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="py-4 text-center">
+                                            <h1 class="month"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">1.000.000</span> <span
+                                                    class="fs-13 text-muted">/Bulan</span></h1>
+                                            <h1 class="annual"><sup><small>Rp</small></sup><span class="ff-secondary fw-bold">11.800.000</span> <span
+                                                    class="fs-13 text-muted">/Tahun</span></h1>
+                                        </div>
+
+                                        <div>
+                                            <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Full page (home, about, service, layanan, contact) bisa request page
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Garansi <b>2</b> bulan
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Free Maintenance <b>3</b> bulan
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Domain (.com, .net, .id, .xyz, .ac.id, .sch.id, .or.id, .web.id, .my.id)
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Revisi <b>5</b> kali selama masa garansi
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            Menggunakan Virtual Private Server
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-4">
+                                                <a href="javascript:void(0);" class="btn btn-soft-success w-100">Pesan</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end col-->
                         </div>
-                        <!--end col-->
+                        <div class="swiper-pagination swiper-pagination-dark swiper-pagination-clickable swiper-pagination-bullets
+                            swiper-pagination-horizontal swiper-pagination-bullets-dynamic" style="width: 150px;">
+                        </div>
                     </div>
                     <!--end row-->
                 </div>
@@ -1590,29 +1959,29 @@
             </section>
             <!-- end contact -->
 
-            <!-- start cta -->
-            <section class="py-5 bg-primary position-relative">
-                <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
-                <div class="container">
-                    <div class="row align-items-center gy-4">
-                        <div class="col-sm">
-                            <div>
-                                <h4 class="text-white mb-0 fw-semibold">Build your web App/SaaS with Velzon dashboard</h4>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                        <div class="col-sm-auto">
-                            <div>
-                                <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-shopping-cart-2-line align-middle me-1"></i> Buy Now</a>
-                            </div>
-                        </div>
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
-                </div>
-                <!-- end container -->
-            </section>
-            <!-- end cta -->
+{{--            <!-- start cta -->--}}
+{{--            <section class="py-5 bg-primary position-relative">--}}
+{{--                <div class="bg-overlay bg-overlay-pattern opacity-50"></div>--}}
+{{--                <div class="container">--}}
+{{--                    <div class="row align-items-center gy-4">--}}
+{{--                        <div class="col-sm">--}}
+{{--                            <div>--}}
+{{--                                <h4 class="text-white mb-0 fw-semibold">Build your web App/SaaS with Velzon dashboard</h4>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <!-- end col -->--}}
+{{--                        <div class="col-sm-auto">--}}
+{{--                            <div>--}}
+{{--                                <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn bg-gradient btn-danger"><i class="ri-shopping-cart-2-line align-middle me-1"></i> Buy Now</a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <!-- end col -->--}}
+{{--                    </div>--}}
+{{--                    <!-- end row -->--}}
+{{--                </div>--}}
+{{--                <!-- end container -->--}}
+{{--            </section>--}}
+{{--            <!-- end cta -->--}}
 
             <!-- Start footer -->
             <footer class="custom-footer bg-dark py-5 position-relative">
@@ -1623,7 +1992,7 @@
                                 <div>
                                     <img src="{{ URL::asset('build/images/logo-light.png') }}" alt="logo light" height="17">
                                 </div>
-                                <div class= mt-4 fs-13">
+                                <div class= "mt-4 fs-13">
                                 <p>Premium Multipurpose Admin & Dashboard Template</p>
                                 <p class="ff-secondary">You can build any type of web application like eCommerce, CRM, CMS, Project
                                     management apps, Admin Panels, etc using Velzon.</p>
@@ -1677,51 +2046,51 @@
                             <p class="copy-rights mb-0">
                                 <script>
                                     document.write(new Date().getFullYear())
-                                </script> © Velzon - Themesbrand
+                                </script> © OMNI DIGITAL TECHNOLOGY
                             </p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="text-sm-end mt-3 mt-sm-0">
-                            <ul class="list-inline mb-0 footer-social-link">
-                                <li class="list-inline-item">
-                                    <a href="javascript: void(0);" class="avatar-xs d-block">
-                                        <div class="avatar-title rounded-circle">
-                                            <i class="ri-facebook-fill"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript: void(0);" class="avatar-xs d-block">
-                                        <div class="avatar-title rounded-circle">
-                                            <i class="ri-github-fill"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript: void(0);" class="avatar-xs d-block">
-                                        <div class="avatar-title rounded-circle">
-                                            <i class="ri-linkedin-fill"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript: void(0);" class="avatar-xs d-block">
-                                        <div class="avatar-title rounded-circle">
-                                            <i class="ri-google-fill"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="javascript: void(0);" class="avatar-xs d-block">
-                                        <div class="avatar-title rounded-circle">
-                                            <i class="ri-dribbble-line"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+{{--                    <div class="col-sm-6">--}}
+{{--                        <div class="text-sm-end mt-3 mt-sm-0">--}}
+{{--                            <ul class="list-inline mb-0 footer-social-link">--}}
+{{--                                <li class="list-inline-item">--}}
+{{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+{{--                                        <div class="avatar-title rounded-circle">--}}
+{{--                                            <i class="ri-facebook-fill"></i>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
+{{--                                <li class="list-inline-item">--}}
+{{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+{{--                                        <div class="avatar-title rounded-circle">--}}
+{{--                                            <i class="ri-github-fill"></i>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
+{{--                                <li class="list-inline-item">--}}
+{{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+{{--                                        <div class="avatar-title rounded-circle">--}}
+{{--                                            <i class="ri-linkedin-fill"></i>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
+{{--                                <li class="list-inline-item">--}}
+{{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+{{--                                        <div class="avatar-title rounded-circle">--}}
+{{--                                            <i class="ri-google-fill"></i>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
+{{--                                <li class="list-inline-item">--}}
+{{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+{{--                                        <div class="avatar-title rounded-circle">--}}
+{{--                                            <i class="ri-dribbble-line"></i>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
         </div>
         </footer>
