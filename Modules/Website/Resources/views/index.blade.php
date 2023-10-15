@@ -14,7 +14,7 @@
             <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar">
                 <div class="container">
                     <a class="navbar-brand" href="{{URL::asset('/index')}}">
-                        <img src="{{ URL::asset('build/images/omni_logo_transparent.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="17">
+                        <img src="{{ URL::asset('build/images/omni-logo-transparent.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="17">
 {{--                        <img src="{{ URL::asset('build/images/logo-light.png') }}" class="card-logo card-logo-light" alt="logo light"--}}
 {{--                             height="17">--}}
                     </a>
@@ -42,7 +42,7 @@
 {{--                                <a class="nav-link fs-14" href="#reviews">Ulasan</a>--}}
 {{--                            </li>--}}
                             <li class="nav-item">
-                                <a class="nav-link fs-14" href="#team">Tim</a>
+                                <a class="nav-link fs-14" href="#team">Tentang Kami</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fs-14" href="#contact">Kontak</a>
@@ -557,7 +557,7 @@
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <p class="mb-0">Dynamic Conetnt</p>
+                                            <p class="mb-0">Dynamic Content</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center">
@@ -1611,15 +1611,16 @@
 {{--            <!-- end counter -->--}}
 
             <!-- start Work Process -->
-            <section class="section">
+            <section class="section" id="work">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="text-center mb-5">
-                                <h3 class="mb-3 fw-semibold">Our Work Process</h3>
-                                <p class="text-muted mb-4 ff-secondary">In an ideal world this website wouldn’t exist, a client would
-                                    acknowledge the importance of having web copy before the Proin vitae ipsum vel ex
-                                    finibus semper design starts.</p>
+                                <h3 class="mb-3 fw-semibold">Sistem kerja Omni</h3>
+                                <p class="text-muted mb-4 ff-secondary">
+                                    Omni Digital Technology mengikuti pendekatan terstruktur dalam pengembangan proyek
+                                    website, memastikan hasil yang berkualitas dan memenuhi kebutuhan klien.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1637,8 +1638,13 @@
                                     </div>
                                 </div>
 
-                                <h5>Tell us what you need</h5>
-                                <p class="text-muted ff-secondary">The profession and the employer and your desire to make your mark.</p>
+                                <h5>Analisis dan Riset</h5>
+                                <p class="text-muted ff-secondary">
+                                    Pada tahap ini, kami berfokus pada pemahaman mendalam terhadap kebutuhan Anda.
+                                    Kami akan berkomunikasi dengan Anda untuk menentukan tujuan, target audiens, dan
+                                    spesifikasi proyek. Kami juga melakukan riset pasar dan pesaing untuk merumuskan
+                                    strategi yang sesuai.
+                                </p>
                             </div>
                         </div>
                         <!-- end col -->
@@ -1653,8 +1659,13 @@
                                     </div>
                                 </div>
 
-                                <h5>Get free quotes</h5>
-                                <p class="text-muted ff-secondary">The most important aspect of beauty was, therefore, an inherent part.</p>
+                                <h5>Perencanaan dan Desain</h5>
+                                <p class="text-muted ff-secondary">
+                                    Setelah analisis selesai, kami membuat rencana proyek yang mencakup jadwal, anggaran,
+                                    dan sumber daya yang diperlukan. Desainer kami akan mulai merancang tampilan website,
+                                    mengintegrasikan elemen desain yang menarik dan responsif. Anda akan diberikan konsep
+                                    desain untuk persetujuan.
+                                </p>
                             </div>
                         </div>
                         <!-- end col -->
@@ -1666,9 +1677,128 @@
                                     </div>
                                 </div>
 
-                                <h5>Deliver high quality product</h5>
-                                <p class="text-muted ff-secondary">We quickly learn to fear and thus automatically avoid potentially.</p>
+                                <h5>Pengembangan</h5>
+                                <p class="text-muted ff-secondary">
+                                    Tahap ini melibatkan pengembangan website yang sesungguhnya. Tim pengembang kami
+                                    akan menggunakan teknologi terkini, seperti Laravel, untuk menciptakan sistem backend
+                                    yang kuat dan front-end yang responsif. Kami memastikan kualitas kode yang tinggi dan
+                                    kepatuhan terhadap standar keamanan.
+                                </p>
                             </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-4">
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-4">
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-4">
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-4">
+                            <div class="process-card mt-4">
+                                <div class="process-arrow-img d-none d-lg-block">
+                                    <img style="transform: scaleX(-1);" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
+                                </div>
+                                <div class="avatar-sm icon-effect mx-auto mb-4">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle h1">
+                                        <i class="ri-quill-pen-line"></i>
+                                    </div>
+                                </div>
+
+                                <h5>Pengujian</h5>
+                                <p class="text-muted ff-secondary">
+                                    Sebelum peluncuran, kami akan menguji website secara menyeluruh. Ini mencakup
+                                    pengujian fungsional, uji kinerja, uji kompatibilitas perangkat, dan uji keamanan. Kami
+                                    memastikan bahwa website beroperasi dengan baik dan bebas dari bug.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-4">
+                            <div class="process-card mt-4">
+                                <div class="process-arrow-img d-none d-lg-block">
+                                    <img style="transform: scaleX(-1);" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
+                                </div>
+                                <div class="avatar-sm icon-effect mx-auto mb-4">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle h1">
+                                        <i class="ri-user-follow-line"></i>
+                                    </div>
+                                </div>
+
+                                <h5>Peluncuran</h5>
+                                <p class="text-muted ff-secondary">
+                                    Setelah website lulus pengujian, kami siap untuk peluncuran. Kami melakukan peluncuran
+                                    secara bertahap dan memantau kinerja untuk memastikan semuanya berjalan dengan
+                                    lancar.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-4">
+                            <div class="process-card mt-4">
+                                <div class="process-arrow-img d-none d-lg-block">
+                                    <img style="transform: rotate(90deg);" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
+                                </div>
+                                <div class="avatar-sm icon-effect mx-auto mb-4">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle h1">
+                                        <i class="ri-book-mark-line"></i>
+                                    </div>
+                                </div>
+
+                                <h5>Dukungan dan Pemeliharaan</h5>
+                                <p class="text-muted ff-secondary">
+                                    Setelah peluncuran, kami tetap memberikan dukungan teknis dan pemeliharaan. Kami siap
+                                    merespons permintaan perubahan atau pemeliharaan rutin untuk menjaga website tetap
+                                    optimal.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-4">
+                            <div class="process-card mt-4">
+                            <div class="process-arrow-img d-none d-lg-block">
+                                <img style="transform: scaleY(-1);" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
+                            </div>
+{{--                                <div class="avatar-sm icon-effect mx-auto mb-4">--}}
+{{--                                    <div class="avatar-title bg-transparent text-success rounded-circle h1">--}}
+{{--                                        <i class="ri-user-follow-line"></i>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+
+{{--                                <h5>Get free quotes</h5>--}}
+{{--                                <p class="text-muted ff-secondary">The most important aspect of beauty was, therefore, an inherent part.</p>--}}
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-4">
+                            <div class="process-card mt-4">
+                                <div class="avatar-sm icon-effect mx-auto mb-4">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle h1">
+                                        <i class="ri-quill-pen-line"></i>
+                                    </div>
+                                </div>
+
+                                <h5>Evaluasi dan Pembaruan</h5>
+                                <p class="text-muted ff-secondary">
+                                    Kami terus melakukan evaluasi kinerja website dan memberikan rekomendasi untuk
+                                    pembaruan. Kami dapat memperbarui konten, fitur, atau sistem sesuai kebutuhan Anda.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-4">
+{{--                            <div class="process-card mt-4">--}}
+{{--                                <div class="avatar-sm icon-effect mx-auto mb-4">--}}
+{{--                                    <div class="avatar-title bg-transparent text-success rounded-circle h1">--}}
+{{--                                        <i class="ri-book-mark-line"></i>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+
+{{--                                <h5>Deliver high quality product</h5>--}}
+{{--                                <p class="text-muted ff-secondary">We quickly learn to fear and thus automatically avoid potentially.</p>--}}
+{{--                            </div>--}}
                         </div>
                         <!-- end col -->
                     </div>
@@ -1684,189 +1814,194 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="text-center mb-5">
-                                <h3 class="mb-3 fw-semibold">Our <span class="text-danger">Team</span></h3>
-                                <p class="text-muted mb-4 ff-secondary">To achieve this, it would be necessary to have uniform grammar,
-                                    pronunciation and more common words. If several languages coalesce the grammar.</p>
+                                <h2 class="mb-3 fw-semibold">Tentang <span class="text-danger">Omni Digital Technology</span></h2>
+                                <br>
+                                <h4 class="text-muted mb-4 ff-secondary">
+                                    Omni Digital Technology adalah vendor yang bergerak di bidang jasa pembuatan web yang
+                                    berkomitmen untuk menghadirkan solusi digital berkualitas bagi bisnis dan individu. Dengan
+                                    fokus pada inovasi, kreativitas, dan teknologi terkini, Omni Digital Technology telah menjelma
+                                    menjadi mitra yang sangat diandalkan dalam membangun kehadiran online yang kuat dan efektif.
+                                </h4>
                             </div>
                         </div>
                     </div>
                     <!-- end row -->
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body text-center p-4">
-                                    <div class="avatar-xl mx-auto mb-4 position-relative">
-                                        <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                        <a href="apps-mailbox"
-                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                            <div class="avatar-title bg-transparent">
-                                                <i class="ri-mail-fill align-bottom"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- end card body -->
-                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Nancy Martino</a></h5>
-                                    <p class="text-muted mb-0 ff-secondary">Team Leader</p>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body text-center p-4">
-                                    <div class="avatar-xl mx-auto mb-4 position-relative">
-                                        <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                        <a href="apps-mailbox"
-                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                            <div class="avatar-title bg-transparent">
-                                                <i class="ri-mail-fill align-bottom"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- end card body -->
-                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Henry Baird</a></h5>
-                                    <p class="text-muted mb-0 ff-secondary">Full Stack Developer</p>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body text-center p-4">
-                                    <div class="avatar-xl mx-auto mb-4 position-relative">
-                                        <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                        <a href="apps-mailbox"
-                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                            <div class="avatar-title bg-transparent">
-                                                <i class="ri-mail-fill align-bottom"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- end card body -->
-                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Frank Hook</a></h5>
-                                    <p class="text-muted mb-0 ff-secondary">Project Manager</p>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body text-center p-4">
-                                    <div class="avatar-xl mx-auto mb-4 position-relative">
-                                        <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                        <a href="apps-mailbox"
-                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                            <div class="avatar-title bg-transparent">
-                                                <i class="ri-mail-fill align-bottom"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- end card body -->
-                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Donald Palmer</a></h5>
-                                    <p class="text-muted mb-0 ff-secondary">UI/UX Designer</p>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body text-center p-4">
-                                    <div class="avatar-xl mx-auto mb-4 position-relative">
-                                        <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                        <a href="apps-mailbox"
-                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                            <div class="avatar-title bg-transparent">
-                                                <i class="ri-mail-fill align-bottom"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- end card body -->
-                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Erica Kernan</a></h5>
-                                    <p class="text-muted mb-0 ff-secondary">Web Designer</p>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body text-center p-4">
-                                    <div class="avatar-xl mx-auto mb-4 position-relative">
-                                        <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                        <a href="apps-mailbox"
-                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                            <div class="avatar-title bg-transparent">
-                                                <i class="ri-mail-fill align-bottom"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- end card body -->
-                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Alexis Clarke</a></h5>
-                                    <p class="text-muted mb-0 ff-secondary">Backend Developer</p>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body text-center p-4">
-                                    <div class="avatar-xl mx-auto mb-4 position-relative">
-                                        <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                        <a href="apps-mailbox"
-                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                            <div class="avatar-title bg-transparent">
-                                                <i class="ri-mail-fill align-bottom"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- end card body -->
-                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Marie Ward</a></h5>
-                                    <p class="text-muted mb-0 ff-secondary">Full Stack Developer</p>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
+{{--                    <div class="row">--}}
+{{--                        <div class="col-lg-3 col-sm-6">--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-body text-center p-4">--}}
+{{--                                    <div class="avatar-xl mx-auto mb-4 position-relative">--}}
+{{--                                        <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="img-fluid rounded-circle">--}}
+{{--                                        <a href="apps-mailbox"--}}
+{{--                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">--}}
+{{--                                            <div class="avatar-title bg-transparent">--}}
+{{--                                                <i class="ri-mail-fill align-bottom"></i>--}}
+{{--                                            </div>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <!-- end card body -->--}}
+{{--                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Nancy Martino</a></h5>--}}
+{{--                                    <p class="text-muted mb-0 ff-secondary">Team Leader</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- end card -->--}}
+{{--                        </div>--}}
+{{--                        <!-- end col -->--}}
+{{--                        <div class="col-lg-3 col-sm-6">--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-body text-center p-4">--}}
+{{--                                    <div class="avatar-xl mx-auto mb-4 position-relative">--}}
+{{--                                        <img src="{{ URL::asset('build/images/users/avatar-10.jpg') }}" alt="" class="img-fluid rounded-circle">--}}
+{{--                                        <a href="apps-mailbox"--}}
+{{--                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">--}}
+{{--                                            <div class="avatar-title bg-transparent">--}}
+{{--                                                <i class="ri-mail-fill align-bottom"></i>--}}
+{{--                                            </div>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <!-- end card body -->--}}
+{{--                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Henry Baird</a></h5>--}}
+{{--                                    <p class="text-muted mb-0 ff-secondary">Full Stack Developer</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- end card -->--}}
+{{--                        </div>--}}
+{{--                        <!-- end col -->--}}
+{{--                        <div class="col-lg-3 col-sm-6">--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-body text-center p-4">--}}
+{{--                                    <div class="avatar-xl mx-auto mb-4 position-relative">--}}
+{{--                                        <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt="" class="img-fluid rounded-circle">--}}
+{{--                                        <a href="apps-mailbox"--}}
+{{--                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">--}}
+{{--                                            <div class="avatar-title bg-transparent">--}}
+{{--                                                <i class="ri-mail-fill align-bottom"></i>--}}
+{{--                                            </div>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <!-- end card body -->--}}
+{{--                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Frank Hook</a></h5>--}}
+{{--                                    <p class="text-muted mb-0 ff-secondary">Project Manager</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- end card -->--}}
+{{--                        </div>--}}
+{{--                        <!-- end col -->--}}
+{{--                        <div class="col-lg-3 col-sm-6">--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-body text-center p-4">--}}
+{{--                                    <div class="avatar-xl mx-auto mb-4 position-relative">--}}
+{{--                                        <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt="" class="img-fluid rounded-circle">--}}
+{{--                                        <a href="apps-mailbox"--}}
+{{--                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">--}}
+{{--                                            <div class="avatar-title bg-transparent">--}}
+{{--                                                <i class="ri-mail-fill align-bottom"></i>--}}
+{{--                                            </div>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <!-- end card body -->--}}
+{{--                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Donald Palmer</a></h5>--}}
+{{--                                    <p class="text-muted mb-0 ff-secondary">UI/UX Designer</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- end card -->--}}
+{{--                        </div>--}}
+{{--                        <!-- end col -->--}}
+{{--                    </div>--}}
+{{--                    <!-- end row -->--}}
+{{--                    <div class="row">--}}
+{{--                        <div class="col-lg-3 col-sm-6">--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-body text-center p-4">--}}
+{{--                                    <div class="avatar-xl mx-auto mb-4 position-relative">--}}
+{{--                                        <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt="" class="img-fluid rounded-circle">--}}
+{{--                                        <a href="apps-mailbox"--}}
+{{--                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">--}}
+{{--                                            <div class="avatar-title bg-transparent">--}}
+{{--                                                <i class="ri-mail-fill align-bottom"></i>--}}
+{{--                                            </div>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <!-- end card body -->--}}
+{{--                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Erica Kernan</a></h5>--}}
+{{--                                    <p class="text-muted mb-0 ff-secondary">Web Designer</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- end card -->--}}
+{{--                        </div>--}}
+{{--                        <!-- end col -->--}}
+{{--                        <div class="col-lg-3 col-sm-6">--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-body text-center p-4">--}}
+{{--                                    <div class="avatar-xl mx-auto mb-4 position-relative">--}}
+{{--                                        <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt="" class="img-fluid rounded-circle">--}}
+{{--                                        <a href="apps-mailbox"--}}
+{{--                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">--}}
+{{--                                            <div class="avatar-title bg-transparent">--}}
+{{--                                                <i class="ri-mail-fill align-bottom"></i>--}}
+{{--                                            </div>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <!-- end card body -->--}}
+{{--                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Alexis Clarke</a></h5>--}}
+{{--                                    <p class="text-muted mb-0 ff-secondary">Backend Developer</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- end card -->--}}
+{{--                        </div>--}}
+{{--                        <!-- end col -->--}}
+{{--                        <div class="col-lg-3 col-sm-6">--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-body text-center p-4">--}}
+{{--                                    <div class="avatar-xl mx-auto mb-4 position-relative">--}}
+{{--                                        <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt="" class="img-fluid rounded-circle">--}}
+{{--                                        <a href="apps-mailbox"--}}
+{{--                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">--}}
+{{--                                            <div class="avatar-title bg-transparent">--}}
+{{--                                                <i class="ri-mail-fill align-bottom"></i>--}}
+{{--                                            </div>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <!-- end card body -->--}}
+{{--                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Marie Ward</a></h5>--}}
+{{--                                    <p class="text-muted mb-0 ff-secondary">Full Stack Developer</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- end card -->--}}
+{{--                        </div>--}}
+{{--                        <!-- end col -->--}}
 
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body text-center p-4">
-                                    <div class="avatar-xl mx-auto mb-4 position-relative">
-                                        <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt="" class="img-fluid rounded-circle">
-                                        <a href="apps-mailbox"
-                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
-                                            <div class="avatar-title bg-transparent">
-                                                <i class="ri-mail-fill align-bottom"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- end card body -->
-                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Jack Gough</a></h5>
-                                    <p class="text-muted mb-0 ff-secondary">React Js Developer</p>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center mt-2">
-                                <a href="pages-team" class="btn btn-primary">View All Members <i
-                                        class="ri-arrow-right-line ms-1 align-bottom"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end row -->
+{{--                        <div class="col-lg-3 col-sm-6">--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-body text-center p-4">--}}
+{{--                                    <div class="avatar-xl mx-auto mb-4 position-relative">--}}
+{{--                                        <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt="" class="img-fluid rounded-circle">--}}
+{{--                                        <a href="apps-mailbox"--}}
+{{--                                           class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">--}}
+{{--                                            <div class="avatar-title bg-transparent">--}}
+{{--                                                <i class="ri-mail-fill align-bottom"></i>--}}
+{{--                                            </div>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    <!-- end card body -->--}}
+{{--                                    <h5 class="mb-1"><a href="pages-profile" class="text-body">Jack Gough</a></h5>--}}
+{{--                                    <p class="text-muted mb-0 ff-secondary">React Js Developer</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <!-- end card -->--}}
+{{--                        </div>--}}
+{{--                        <!-- end col -->--}}
+{{--                    </div>--}}
+{{--                    <!-- end row -->--}}
+{{--                    <div class="row">--}}
+{{--                        <div class="col-lg-12">--}}
+{{--                            <div class="text-center mt-2">--}}
+{{--                                <a href="pages-team" class="btn btn-primary">View All Members <i--}}
+{{--                                        class="ri-arrow-right-line ms-1 align-bottom"></i></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- end row -->--}}
                 </div>
                 <!-- end container -->
             </section>
@@ -1878,10 +2013,11 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="text-center mb-5">
-                                <h3 class="mb-3 fw-semibold">Get In Touch</h3>
-                                <p class="text-muted mb-4 ff-secondary">We thrive when coming up with innovative ideas but also
-                                    understand that a smart concept should be supported with faucibus sapien odio measurable
-                                    results.</p>
+                                <h3 class="mb-3 fw-semibold">Lebih dekat dengan Kami</h3>
+                                <p class="text-muted mb-4 ff-secondary">
+                                    Hubungi kami sekarang untuk berbicara tentang kebutuhan dan ide Anda.
+                                    Kunjungi kantor kami atau hubungi kami secara online. Kami siap untuk menjawab semua pertanyaan Anda.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1891,16 +2027,21 @@
                         <div class="col-lg-4">
                             <div>
                                 <div class="mt-4">
-                                    <h5 class="fs-13 text-muted text-uppercase">Office Address 1:</h5>
-                                    <div class="ff-secondary fw-semibold">4461 Cedar Street Moro, <br/>AR 72368</div>
+                                    <h5 class="fs-13 text-muted text-uppercase">Alamat :</h5>
+                                    <div class="ff-secondary fw-semibold">
+                                        Jl. Raya Delanggu - Juwiring, <br>
+                                        Dusun II, Bulan, Kec. Wonosari, <br>
+                                        Kabupaten Klaten, Jawa Tengah <br>
+                                        57473, Indonesia
+                                    </div>
                                 </div>
+{{--                                <div class="mt-4">--}}
+{{--                                    <h5 class="fs-13 text-muted text-uppercase">Office Address 2:</h5>--}}
+{{--                                    <div class="ff-secondary fw-semibold">2467 Swick Hill Street <br />New Orleans, LA</div>--}}
+{{--                                </div>--}}
                                 <div class="mt-4">
-                                    <h5 class="fs-13 text-muted text-uppercase">Office Address 2:</h5>
-                                    <div class="ff-secondary fw-semibold">2467 Swick Hill Street <br />New Orleans, LA</div>
-                                </div>
-                                <div class="mt-4">
-                                    <h5 class="fs-13 text-muted text-uppercase">Working Hours:</h5>
-                                    <div class="ff-secondary fw-semibold">9:00am to 6:00pm</div>
+                                    <h5 class="fs-13 text-muted text-uppercase">Jam Pelayanan :</h5>
+                                    <div class="ff-secondary fw-semibold">Setiap hari 24 jam</div>
                                 </div>
                             </div>
                         </div>
@@ -1911,35 +2052,35 @@
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="mb-4">
-                                                <label for="name" class="form-label fs-13">Name</label>
+                                                <label for="name" class="form-label fs-13">Nama</label>
                                                 <input name="name" id="name" type="text"
-                                                       class="form-control bg-light border-light" placeholder="Your name*">
+                                                       class="form-control bg-light border-light" placeholder="nama anda*">
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="mb-4">
                                                 <label for="email" class="form-label fs-13">Email</label>
                                                 <input name="email" id="email" type="email"
-                                                       class="form-control bg-light border-light" placeholder="Your email*">
+                                                       class="form-control bg-light border-light" placeholder="email anda*">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="mb-4">
-                                                <label for="subject" class="form-label fs-13">Subject</label>
+                                                <label for="subject" class="form-label fs-13">Subjek</label>
                                                 <input type="text" class="form-control bg-light border-light" id="subject"
-                                                       name="subject" placeholder="Your Subject.." />
+                                                       name="subject" placeholder="subjek anda.." />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="mb-3">
-                                                <label for="comments" class="form-label fs-13">Message</label>
+                                                <label for="comments" class="form-label fs-13">Pesan</label>
                                                 <textarea name="comments" id="comments" rows="3"
                                                           class="form-control bg-light border-light"
-                                                          placeholder="Your message..."></textarea>
+                                                          placeholder="pesan anda..."></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -1990,109 +2131,106 @@
                         <div class="col-lg-4 mt-4">
                             <div>
                                 <div>
-                                    <img src="{{ URL::asset('build/images/logo-light.png') }}" alt="logo light" height="17">
+                                    <img src="{{ URL::asset('build/images/omni-logo-transparent.png') }}" alt="logo light" width="50%" height="25%">
                                 </div>
                                 <div class= "mt-4 fs-13">
-                                <p>Premium Multipurpose Admin & Dashboard Template</p>
-                                <p class="ff-secondary">You can build any type of web application like eCommerce, CRM, CMS, Project
-                                    management apps, Admin Panels, etc using Velzon.</p>
+                                    <p>Jembatan Menuju Inovasi.</p>
+                                    <p class="ff-secondary">
+                                        Kami disini untuk menjembatani kesenjangan antara ide-ide brilian dan inovasi teknologi meraih kesuksesan di dunia digital.
+                                        Dengan dedikasi kami untuk inovasi yang tak terbatas, kami menjadi mitra andal bagi perusahaan dari berbagai industri.
+                                        Jangan lewatkan peluang untuk merasakan keajaiban teknologi bersama kami.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 ms-lg-auto">
+                            <div class="row">
+                                <div class="col-sm-4 mt-4">
+                                    <h5 class="text-white mb-0">Company</h5>
+                                    <div class="text-muted mt-3">
+                                        <ul class="list-unstyled ff-secondary footer-list fs-14">
+                                            <li><a href="#team">Tentang Kami</a></li>
+                                            <li><a href="#work">Sistem Kerja</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mt-4">
+                                    <h5 class="text-white mb-0">Apps Pages</h5>
+                                    <div class="text-muted mt-3">
+                                        <ul class="list-unstyled ff-secondary footer-list fs-14">
+                                            <li><a href="#hero">Beranda</a></li>
+                                            <li><a href="#services">Layanan</a></li>
+                                            <li><a href="#features">Fitur</a></li>
+                                            <li><a href="#plans">Paket</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mt-4">
+                                    <h5 class="text-white mb-0">Support</h5>
+                                    <div class="text-muted mt-3">
+                                        <ul class="list-unstyled ff-secondary footer-list fs-14">
+                                            <li><a href="#contact">Kontak</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-7 ms-lg-auto">
-                        <div class="row">
-                            <div class="col-sm-4 mt-4">
-                                <h5 class="text-white mb-0">Company</h5>
-                                <div class="text-muted mt-3">
-                                    <ul class="list-unstyled ff-secondary footer-list fs-14">
-                                        <li><a href="pages-profile">About Us</a></li>
-                                        <li><a href="pages-gallery">Gallery</a></li>
-                                        <li><a href="apps-projects-overview">Projects</a></li>
-                                        <li><a href="pages-timeline">Timeline</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 mt-4">
-                                <h5 class="text-white mb-0">Apps Pages</h5>
-                                <div class="text-muted mt-3">
-                                    <ul class="list-unstyled ff-secondary footer-list fs-14">
-                                        <li><a href="pages-pricing">Calendar</a></li>
-                                        <li><a href="apps-mailbox">Mailbox</a></li>
-                                        <li><a href="apps-chat">Chat</a></li>
-                                        <li><a href="apps-crm-deals">Deals</a></li>
-                                        <li><a href="apps-tasks-kanban">Kanban Board</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 mt-4">
-                                <h5 class="text-white mb-0">Support</h5>
-                                <div class="text-muted mt-3">
-                                    <ul class="list-unstyled ff-secondary footer-list fs-14">
-                                        <li><a href="pages-faqs">FAQ</a></li>
-                                        <li><a href="pages-faqs">Contact</a></li>
-                                    </ul>
-                                </div>
+                    <div class="row text-center text-sm-start align-items-center mt-5">
+                        <div class="col-sm-6">
+                            <div>
+                                <p class="copy-rights mb-0">
+                                    <script>
+                                        document.write(new Date().getFullYear())
+                                    </script> © OMNI DIGITAL TECHNOLOGY - COPYRIGHT
+                                </p>
                             </div>
                         </div>
+    {{--                    <div class="col-sm-6">--}}
+    {{--                        <div class="text-sm-end mt-3 mt-sm-0">--}}
+    {{--                            <ul class="list-inline mb-0 footer-social-link">--}}
+    {{--                                <li class="list-inline-item">--}}
+    {{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+    {{--                                        <div class="avatar-title rounded-circle">--}}
+    {{--                                            <i class="ri-facebook-fill"></i>--}}
+    {{--                                        </div>--}}
+    {{--                                    </a>--}}
+    {{--                                </li>--}}
+    {{--                                <li class="list-inline-item">--}}
+    {{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+    {{--                                        <div class="avatar-title rounded-circle">--}}
+    {{--                                            <i class="ri-github-fill"></i>--}}
+    {{--                                        </div>--}}
+    {{--                                    </a>--}}
+    {{--                                </li>--}}
+    {{--                                <li class="list-inline-item">--}}
+    {{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+    {{--                                        <div class="avatar-title rounded-circle">--}}
+    {{--                                            <i class="ri-linkedin-fill"></i>--}}
+    {{--                                        </div>--}}
+    {{--                                    </a>--}}
+    {{--                                </li>--}}
+    {{--                                <li class="list-inline-item">--}}
+    {{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+    {{--                                        <div class="avatar-title rounded-circle">--}}
+    {{--                                            <i class="ri-google-fill"></i>--}}
+    {{--                                        </div>--}}
+    {{--                                    </a>--}}
+    {{--                                </li>--}}
+    {{--                                <li class="list-inline-item">--}}
+    {{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
+    {{--                                        <div class="avatar-title rounded-circle">--}}
+    {{--                                            <i class="ri-dribbble-line"></i>--}}
+    {{--                                        </div>--}}
+    {{--                                    </a>--}}
+    {{--                                </li>--}}
+    {{--                            </ul>--}}
+    {{--                        </div>--}}
+    {{--                    </div>--}}
                     </div>
-
-                </div>
-
-                <div class="row text-center text-sm-start align-items-center mt-5">
-                    <div class="col-sm-6">
-
-                        <div>
-                            <p class="copy-rights mb-0">
-                                <script>
-                                    document.write(new Date().getFullYear())
-                                </script> © OMNI DIGITAL TECHNOLOGY
-                            </p>
-                        </div>
-                    </div>
-{{--                    <div class="col-sm-6">--}}
-{{--                        <div class="text-sm-end mt-3 mt-sm-0">--}}
-{{--                            <ul class="list-inline mb-0 footer-social-link">--}}
-{{--                                <li class="list-inline-item">--}}
-{{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
-{{--                                        <div class="avatar-title rounded-circle">--}}
-{{--                                            <i class="ri-facebook-fill"></i>--}}
-{{--                                        </div>--}}
-{{--                                    </a>--}}
-{{--                                </li>--}}
-{{--                                <li class="list-inline-item">--}}
-{{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
-{{--                                        <div class="avatar-title rounded-circle">--}}
-{{--                                            <i class="ri-github-fill"></i>--}}
-{{--                                        </div>--}}
-{{--                                    </a>--}}
-{{--                                </li>--}}
-{{--                                <li class="list-inline-item">--}}
-{{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
-{{--                                        <div class="avatar-title rounded-circle">--}}
-{{--                                            <i class="ri-linkedin-fill"></i>--}}
-{{--                                        </div>--}}
-{{--                                    </a>--}}
-{{--                                </li>--}}
-{{--                                <li class="list-inline-item">--}}
-{{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
-{{--                                        <div class="avatar-title rounded-circle">--}}
-{{--                                            <i class="ri-google-fill"></i>--}}
-{{--                                        </div>--}}
-{{--                                    </a>--}}
-{{--                                </li>--}}
-{{--                                <li class="list-inline-item">--}}
-{{--                                    <a href="javascript: void(0);" class="avatar-xs d-block">--}}
-{{--                                        <div class="avatar-title rounded-circle">--}}
-{{--                                            <i class="ri-dribbble-line"></i>--}}
-{{--                                        </div>--}}
-{{--                                    </a>--}}
-{{--                                </li>--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-                </div>
-        </div>
+            </div>
         </footer>
         <!-- end footer -->
 
