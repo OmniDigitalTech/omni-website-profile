@@ -11,6 +11,7 @@
 |
 */
 
+Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))->group(function () {
     Route::prefix('project')->group(function (){
         Route::get('/', 'ProjectController@index')->name('management.project.index');
         Route::get('/create', 'ProjectController@create')->name('management.project.create');
@@ -26,5 +27,4 @@
             Route::post('/store/{project}', 'SubscriptionController@store')->name('management.project.subscription.store');
         });
     });
-Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))->middleware(['auth', 'management'])->group(function () {
 });
