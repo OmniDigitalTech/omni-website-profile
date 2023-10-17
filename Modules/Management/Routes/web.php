@@ -11,6 +11,6 @@
 |
 */
 
-Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))->middleware(['auth', 'management'])->group(function () {
     Route::get('/', 'ManagementController@index')->name('management.index');
+Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))->middleware(['auth', 'management'])->group(function () {
 });

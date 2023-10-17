@@ -15,8 +15,8 @@ use Modules\Website\Http\Controllers\WebsiteController as website;
 |
 */
 
-Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))->middleware(['auth', 'management'])->group(function () {
     Route::get('/', [\Modules\Management\Http\Controllers\ManagementController::class, 'index'])->name('management.index');
+Route::domain(config('app.sub_domain_management') . '.' . config('app.domain'))->middleware(['auth', 'management'])->group(function () {
 });
 
 Route::prefix('/')->group(function() {
