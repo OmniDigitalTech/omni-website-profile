@@ -43,6 +43,7 @@
                                     <!--end col-->
                                 </div>
                                 <!--end row-->
+                                <!--end row-->
                             </form>
                         </div>
                     </div><!-- end card header -->
