@@ -6,7 +6,7 @@ Contact: Themesbrand@gmail.com
 File: seller-details init js
 */
 
-// table-product-list-all 
+// table-product-list-all
 var TableProductListAll = document.getElementById('table-product-list-all');
 if (TableProductListAll) {
     new gridjs.Grid({

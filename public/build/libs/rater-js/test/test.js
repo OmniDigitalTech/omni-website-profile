@@ -5,7 +5,7 @@ var jsdom = require('jsdom');
 const { JSDOM } = jsdom;
 
 describe('RaterJs', function() {
-      
+
     it('should throw when element is missing', function() {
         assert.throws(() => {
             raterJs();
@@ -87,7 +87,7 @@ describe('RaterJs', function() {
         sinon.assert.calledOnce(callbackSpy);
     });
 
-    
+
     it('setRating should throw when rating is below 0', function() {
         const dom = new JSDOM(`<!DOCTYPE html><div id="rater">test</div>`);
         const element = dom.window.document.querySelector("#rater");
@@ -140,7 +140,7 @@ describe('RaterJs', function() {
         const dom = new JSDOM(`<!DOCTYPE html><div id="rater">test</div>`);
         const element = dom.window.document.querySelector("#rater");
         global.document = dom.window.document;
-       
+
         assert.throws(() => {
             let rater = raterJs({ element:element, step:0 });
         });

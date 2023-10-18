@@ -1,4 +1,4 @@
-[   
+[
     {
         "id": 1,
         "name": "Lisa Parker",
@@ -66,7 +66,7 @@
         "nickname": "RD",
         "profile": "",
         "messagecount" : 18
-    },       
+    },
     {
         "id": 11,
         "name": "Justyn Wisoky",
@@ -78,7 +78,7 @@
         "name": "Keaton King",
         "status": "online",
         "profile": "build/images/users/avatar-5.jpg"
-    }, 
+    },
     {
         "id": 13,
         "nickname": "AC",
@@ -98,7 +98,7 @@
         "name": "Barrett Brown",
         "status": "online",
         "profile": "build/images/users/avatar-4.jpg"
-    },  
+    },
     {
         "id": 16,
         "name": "Victor Beahan",
@@ -117,5 +117,5 @@
         "name": "Wayne Runte",
         "status": "online",
         "profile": "build/images/users/avatar-2.jpg"
-    }      
+    }
 ]

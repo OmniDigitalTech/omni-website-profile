@@ -649,7 +649,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    thousand: 'thousand',
 	    lakh:     'lakh',
 	    wan:      'wan',
-	    none:     'none'    
+	    none:     'none'
 	};
 
 	NumeralFormatter.prototype = {
@@ -696,7 +696,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        } else {
 	            partSignAndPrefix = partSign;
 	        }
-	        
+
 	        partInteger = value;
 
 	        if (value.indexOf(owner.numeralDecimalMark) >= 0) {
@@ -768,7 +768,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return parseInt(x, 10);
 	      });
 	    if (owner.dateMax.length === 2) owner.dateMax.unshift(0);
-	    
+
 	    owner.initBlocks();
 	};
 
@@ -1674,7 +1674,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        // others
 	        target.swapHiddenInput = !!opts.swapHiddenInput;
-	        
+
 	        target.numericOnly = target.creditCard || target.date || !!opts.numericOnly;
 
 	        target.uppercase = !!opts.uppercase;

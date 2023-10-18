@@ -1,81 +1,81 @@
 /*! rater-js. [c] 2018 Fredrik Olsson. MIT License */
 
-let css = require('./style.css'); 
+let css = require('./style.css');
 
 module.exports = function(options) {
 
 	//private fields
-	let showToolTip = true; 
+	let showToolTip = true;
 
 	if (typeof options.element === "undefined" || options.element === null) {
-		throw new Error("element required"); 
+		throw new Error("element required");
 	}
 
 	if (typeof options.showToolTip !== "undefined") {
-		showToolTip = !!options.showToolTip; 
+		showToolTip = !!options.showToolTip;
 	}
 
 	if (typeof options.step !== "undefined") {
 		if (options.step <= 0 || options.step > 1) {
-			throw new Error("step must be a number between 0 and 1"); 
+			throw new Error("step must be a number between 0 and 1");
 		}
 	}
-	let elem = options.element; 
+	let elem = options.element;
 	let reverse = options.reverse;
-	let stars = options.max || 5; 
-	let starSize = options.starSize || 16; 
-	let step = options.step || 1; 
-	let onHover = options.onHover; 
-	let onLeave = options.onLeave; 
-	let rating = null; 
-	let myRating; 
-	elem.classList.add("star-rating"); 
-	let div = document.createElement("div"); 
-	div.classList.add("star-value"); 
+	let stars = options.max || 5;
+	let starSize = options.starSize || 16;
+	let step = options.step || 1;
+	let onHover = options.onHover;
+	let onLeave = options.onLeave;
+	let rating = null;
+	let myRating;
+	elem.classList.add("star-rating");
+	let div = document.createElement("div");
+	div.classList.add("star-value");
 	if(reverse) {
 		div.classList.add("rtl");
 	}
-	div.style.backgroundSize = starSize + "px"; 
-	elem.appendChild(div); 
-	elem.style.width = starSize * stars + "px"; 
-	elem.style.height = starSize + "px"; 
-	elem.style.backgroundSize = starSize + "px"; 
-	let callback = options.rateCallback; 
-	let disabled =  !!options.readOnly; 
-	let disableText; 
-	let isRating = false; 
-	let isBusyText = options.isBusyText; 
-	let currentRating; 
-	let ratingText; 
-	
+	div.style.backgroundSize = starSize + "px";
+	elem.appendChild(div);
+	elem.style.width = starSize * stars + "px";
+	elem.style.height = starSize + "px";
+	elem.style.backgroundSize = starSize + "px";
+	let callback = options.rateCallback;
+	let disabled =  !!options.readOnly;
+	let disableText;
+	let isRating = false;
+	let isBusyText = options.isBusyText;
+	let currentRating;
+	let ratingText;
+
 	if (typeof options.disableText !== "undefined") {
-		disableText = options.disableText; 
+		disableText = options.disableText;
 	}else {
-		disableText = "{rating}/{maxRating}"; 
+		disableText = "{rating}/{maxRating}";
 	}
 
 	if (typeof options.ratingText !== "undefined") {
-		ratingText = options.ratingText; 
+		ratingText = options.ratingText;
 	}else {
-		ratingText = "{rating}/{maxRating}"; 
+		ratingText = "{rating}/{maxRating}";
 	}
-	
+
 	if (options.rating) {
-		setRating(options.rating); 
+		setRating(options.rating);
 	}else {
-		var dataRating = elem.dataset.rating; 
+		var dataRating = elem.dataset.rating;
 
 		if (dataRating) {
-			setRating( + dataRating); 
+			setRating( + dataRating);
 		}
 	}
 
 	if ( ! rating) {
-		elem.querySelector(".star-value").style.width = "0px"; 
+		elem.querySelector(".star-value").style.width = "0px";
 	}
 
 	if (disabled) {
-		disable(); 
+		disable();
 	}
 
 	//private methods
@@ -90,9 +90,9 @@ module.exports = function(options) {
 	function onMove(e, isTouch) {
 
 		if (disabled === true || isRating === true) {
-			return; 
+			return;
 		}
-		
+
 		let xCoor = null;
 		let percent;
 		let width = elem.offsetWidth;
@@ -104,10 +104,10 @@ module.exports = function(options) {
 			} else {
 				xCoor = e.pageX - window.scrollX - parentOffset.left;
 			}
-  
+
 			let relXRtl = width - xCoor;
 			let valueForDivision = width / 100;
-  
+
 			percent = relXRtl / valueForDivision;
 		} else {
 			if(isTouch) {
@@ -115,19 +115,19 @@ module.exports = function(options) {
 			} else {
 				xCoor = e.offsetX;
 			}
-		
+
 			percent = xCoor / width * 100;
 		}
 
 		if (percent < 101) {
 			if (step === 1) {
-				currentRating = Math.ceil((percent / 100) * stars); 
+				currentRating = Math.ceil((percent / 100) * stars);
 			}else {
-				let rat = (percent / 100) * stars; 
+				let rat = (percent / 100) * stars;
 				for (let i = 0; ; i += step) {
 					if (i >= rat) {
-						currentRating = i; 
-						break; 
+						currentRating = i;
+						break;
 					}
 				}
 			}
@@ -137,16 +137,16 @@ module.exports = function(options) {
 				currentRating = stars;
 			}
 
-			elem.querySelector(".star-value").style.width = currentRating/stars * 100 + "%"; 
-	 
+			elem.querySelector(".star-value").style.width = currentRating/stars * 100 + "%";
+
 			if (showToolTip) {
-				let toolTip = ratingText.replace("{rating}", currentRating); 
-				toolTip = toolTip.replace("{maxRating}", stars); 
-				elem.setAttribute("title", toolTip); 
+				let toolTip = ratingText.replace("{rating}", currentRating);
+				toolTip = toolTip.replace("{maxRating}", stars);
+				elem.setAttribute("title", toolTip);
 			}
-				
+
 			if (typeof onHover === "function") {
-				onHover(currentRating, rating); 
+				onHover(currentRating, rating);
 			}
 		}
 	}
@@ -158,15 +158,15 @@ module.exports = function(options) {
 	function onStarOut(e) {
 
 		if (!rating) {
-			elem.querySelector(".star-value").style.width = "0%"; 
-			elem.removeAttribute("data-rating"); 
+			elem.querySelector(".star-value").style.width = "0%";
+			elem.removeAttribute("data-rating");
 		}else {
-			elem.querySelector(".star-value").style.width = rating/stars * 100 + "%"; 
-			elem.setAttribute("data-rating", rating); 
+			elem.querySelector(".star-value").style.width = rating/stars * 100 + "%";
+			elem.setAttribute("data-rating", rating);
 		}
 
 		if (typeof onLeave === "function") {
-			onLeave(currentRating, rating); 
+			onLeave(currentRating, rating);
 		}
 	}
 
@@ -176,32 +176,32 @@ module.exports = function(options) {
 	 */
 	function onStarClick(e) {
 		if (disabled === true) {
-			return; 
+			return;
 		}
 
 		if (isRating === true) {
-			return; 
+			return;
 		}
 
 		if (typeof callback !== "undefined") {
-			isRating = true; 
-			myRating = currentRating; 
+			isRating = true;
+			myRating = currentRating;
 
 			if (typeof isBusyText === "undefined") {
-				elem.removeAttribute("title"); 
+				elem.removeAttribute("title");
 			}else {
-				elem.setAttribute("title", isBusyText); 
+				elem.setAttribute("title", isBusyText);
 			}
-			
+
 			elem.classList.add("is-busy");
 			callback.call(this, myRating, function() {
 				if (disabled === false) {
-					elem.removeAttribute("title"); 
+					elem.removeAttribute("title");
 				}
 
-				isRating = false; 
+				isRating = false;
 				elem.classList.remove("is-busy");
-			}); 
+			});
 		}
 	}
 
@@ -213,11 +213,11 @@ module.exports = function(options) {
 		elem.classList.add("disabled");
 
 		if (showToolTip && !!disableText) {
-			let toolTip = disableText.replace("{rating}", !!rating ? rating : 0); 
-			toolTip = toolTip.replace("{maxRating}", stars); 
-			 elem.setAttribute("title", toolTip); 
+			let toolTip = disableText.replace("{rating}", !!rating ? rating : 0);
+			toolTip = toolTip.replace("{maxRating}", stars);
+			 elem.setAttribute("title", toolTip);
 		}else {
-			elem.removeAttribute("title"); 
+			elem.removeAttribute("title");
 		}
 	}
 
@@ -225,7 +225,7 @@ module.exports = function(options) {
 	 * Enabled the rater so that it's possible to click the stars.
 	 */
 	function enable() {
-		disabled = false; 
+		disabled = false;
 		elem.removeAttribute("title");
 		elem.classList.remove("disabled");
 	}
@@ -235,69 +235,69 @@ module.exports = function(options) {
 	 */
 	function setRating(value) {
 		if (typeof value === "undefined") {
-			throw new Error("Value not set."); 
+			throw new Error("Value not set.");
 		}
 
 		if (value === null) {
-			throw new Error("Value cannot be null."); 
+			throw new Error("Value cannot be null.");
 		}
 
 		if (typeof value !== "number") {
-			throw new Error("Value must be a number."); 
+			throw new Error("Value must be a number.");
 		}
 
 		if (value < 0 || value > stars) {
-			throw new Error("Value too high. Please set a rating of " + stars + " or below."); 
+			throw new Error("Value too high. Please set a rating of " + stars + " or below.");
 		}
 
-		rating = value; 
-		elem.querySelector(".star-value").style.width = value/stars * 100 + "%"; 
-		elem.setAttribute("data-rating", value); 
+		rating = value;
+		elem.querySelector(".star-value").style.width = value/stars * 100 + "%";
+		elem.setAttribute("data-rating", value);
 	}
 
 	/**
 	 * Gets the rating
 	 */
 	function getRating() {
-		return rating; 
+		return rating;
 	}
 
 	/**
 	 * Set the rating to a value to inducate it's not rated.
 	 */
 	function clear() {
-		rating = null; 
-		elem.querySelector(".star-value").style.width = "0px"; 
-		elem.removeAttribute("title"); 
+		rating = null;
+		elem.querySelector(".star-value").style.width = "0px";
+		elem.removeAttribute("title");
 	}
 
 	/**
 	 * Remove event handlers.
 	 */
 	function dispose() {
-		elem.removeEventListener("mousemove", onMouseMove); 
-		elem.removeEventListener("mouseleave", onStarOut); 
+		elem.removeEventListener("mousemove", onMouseMove);
+		elem.removeEventListener("mouseleave", onStarOut);
 		elem.removeEventListener("click", onStarClick);
 		elem.removeEventListener("touchmove", handleMove, false);
 		elem.removeEventListener("touchstart", handleStart, false);
 		elem.removeEventListener("touchend", handleEnd, false);
 		elem.removeEventListener("touchcancel", handleCancel, false);
 	}
-	
-	elem.addEventListener("mousemove", onMouseMove); 
-	elem.addEventListener("mouseleave", onStarOut); 
+
+	elem.addEventListener("mousemove", onMouseMove);
+	elem.addEventListener("mouseleave", onStarOut);
 
 	let module =  {
-		setRating:setRating, 
-		getRating:getRating, 
-		disable:disable, 
-		enable:enable, 
-		clear:clear, 
+		setRating:setRating,
+		getRating:getRating,
+		disable:disable,
+		enable:enable,
+		clear:clear,
 		dispose:dispose,
 		get element() {
 			return elem;
 		}
-	}; 
+	};
 
 	 /**
 	 * Handles touchmove event.
@@ -310,7 +310,7 @@ module.exports = function(options) {
 
 	/**
 	 * Handles touchstart event.
-	 * @param {TouchEvent} e 
+	 * @param {TouchEvent} e
 	 */
 	function handleStart(e) {
 		e.preventDefault();
@@ -319,7 +319,7 @@ module.exports = function(options) {
 
 	/**
 	 * Handles touchend event.
-	 * @param {TouchEvent} e 
+	 * @param {TouchEvent} e
 	 */
 	function handleEnd(evt) {
 		evt.preventDefault();
@@ -329,18 +329,18 @@ module.exports = function(options) {
 
 	/**
 	 * Handles touchend event.
-	 * @param {TouchEvent} e 
+	 * @param {TouchEvent} e
 	 */
 	function handleCancel(e) {
 		e.preventDefault();
 		onStarOut(e);
 	}
 
-	elem.addEventListener("click", onStarClick.bind(module)); 
+	elem.addEventListener("click", onStarClick.bind(module));
 	elem.addEventListener("touchmove", handleMove, false);
 	elem.addEventListener("touchstart", handleStart, false);
 	elem.addEventListener("touchend", handleEnd, false);
 	elem.addEventListener("touchcancel", handleCancel, false);
 
-	return module; 
+	return module;
 }

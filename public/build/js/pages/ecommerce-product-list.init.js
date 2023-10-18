@@ -8,7 +8,7 @@ File: Ecommerce product list Js File
 
 
 
-// table-product-list-all 
+// table-product-list-all
 var productListAllData = [
 	{
 		"id": 1,
@@ -765,7 +765,7 @@ function removeSingleItem() {
 
 			productListAllData = productListAllData.map(function (item) {
 				if (item.id == getEditid) {
-					
+
 					sessionStorage.setItem('editInputValue', JSON.stringify(item));
 				}
 				return item;

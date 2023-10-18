@@ -67994,7 +67994,7 @@
               x: pmin[0],
               y: pmin[1],
               width:  candleWidth ,
-              height:  pmax[1] - pmin[1] 
+              height:  pmax[1] - pmin[1]
             };
           }
 

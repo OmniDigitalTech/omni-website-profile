@@ -1028,7 +1028,7 @@
       _this.shape.addClass('jvm-region jvm-element');
 
       var bbox = _this.shape.getBBox(),
-          text = _this.getLabelText(code, label); // If label is passed and render function returns something 
+          text = _this.getLabelText(code, label); // If label is passed and render function returns something
 
 
       if (label && text) {

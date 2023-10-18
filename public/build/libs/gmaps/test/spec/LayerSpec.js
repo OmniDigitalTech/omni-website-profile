@@ -21,7 +21,7 @@ describe("Adding layers", function() {
 
     it("should be removed from the current map", function() {
       map_with_layers.removeLayer('traffic');
-      
+
       expect(single_layer.getMap()).toBeNull();
     });
   });
@@ -38,7 +38,7 @@ describe("Adding layers", function() {
       expect(multiple_layers[0].getMap()).toEqual(map_with_layers.map);
       expect(multiple_layers[1].getMap()).toEqual(map_with_layers.map);
     });
-    
+
     it("should be removed from the current map", function() {
       map_with_layers.removeLayer('transit');
       map_with_layers.removeLayer('bicycling');

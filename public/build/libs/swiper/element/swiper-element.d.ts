@@ -91,7 +91,7 @@ interface SwiperContainerEventMap extends Omit<HTMLElementEventMap, 'click' | 'p
    */
   zoomchange: CustomEvent<[swiper: Swiper, scale: number, imageEl: HTMLElement, slideEl: HTMLElement]>;
 
-  
+
   /**
    * Fired right after Swiper initialization.
    * @note Note that with `swiper.on('init')` syntax it will
@@ -278,32 +278,32 @@ interface SwiperContainerEventMap extends Omit<HTMLElementEventMap, 'click' | 'p
   /**
    * !INTERNAL: Event will fired right before breakpoint change
    */
- 
+
 
   /**
    * !INTERNAL: Event will fired after setting CSS classes on swiper container element
    */
- 
+
 
   /**
    * !INTERNAL: Event will fired after setting CSS classes on swiper slide element
    */
- 
+
 
   /**
    * !INTERNAL: Event will fired after setting CSS classes on all swiper slides
    */
- 
+
 
   /**
    * !INTERNAL: Event will fired as soon as swiper instance available (before init)
    */
- 
+
 
   /**
    * !INTERNAL: Event will be fired on free mode touch end (release) and there will no be momentum
    */
- 
+
 
   /**
    * Event will fired on active index change
@@ -393,7 +393,7 @@ interface SwiperContainerEventMap extends Omit<HTMLElementEventMap, 'click' | 'p
    * Event will be fired when swiper is unlocked (when `watchOverflow` enabled)
    */
   unlock: CustomEvent<[swiper: Swiper]>;
-  
+
 }
 
 interface SwiperContainer extends HTMLElement {}
