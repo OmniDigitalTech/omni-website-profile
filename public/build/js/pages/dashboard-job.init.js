@@ -255,7 +255,7 @@ if (document.getElementById("recomended-jobs")){
         }
 
         var filterData = filterItems(jobListAllData, inputVal);
-        
+
         jobListAll.updateConfig({
             data: filterData
         }).forceRender();
@@ -563,4 +563,4 @@ if (chartRadialbarBasicColors) {
 
     var chart = new ApexCharts(document.querySelector("#new_jobs_chart"), options);
     chart.render();
-}   
+}

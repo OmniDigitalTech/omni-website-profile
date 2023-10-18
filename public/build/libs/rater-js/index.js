@@ -321,7 +321,7 @@ module.exports = function (options) {
   }
   /**
    * Handles touchstart event.
-   * @param {TouchEvent} e 
+   * @param {TouchEvent} e
    */
 
 
@@ -331,7 +331,7 @@ module.exports = function (options) {
   }
   /**
    * Handles touchend event.
-   * @param {TouchEvent} e 
+   * @param {TouchEvent} e
    */
 
 
@@ -342,7 +342,7 @@ module.exports = function (options) {
   }
   /**
    * Handles touchend event.
-   * @param {TouchEvent} e 
+   * @param {TouchEvent} e
    */
 
 

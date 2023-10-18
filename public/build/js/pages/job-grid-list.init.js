@@ -198,7 +198,7 @@ function paginationEvents() {
 var searchElementList = document.getElementById("searchJob");
 searchElementList.addEventListener("keyup", function () {
     var inputVal = searchElementList.value.toLowerCase();
-    
+
     function filterItems(arr, query) {
         return arr.filter(function (el) {
             return el.jobTitle.toLowerCase().indexOf(query.toLowerCase()) !== -1
@@ -259,7 +259,7 @@ function filterData() {
         } else {
             dateFilter = false;
         }
-        
+
         if (statusFilter && typeFilter && dateFilter) {
             return statusFilter && typeFilter && dateFilter;
         } else if (statusFilter && typeFilter && pickerVal == "") {

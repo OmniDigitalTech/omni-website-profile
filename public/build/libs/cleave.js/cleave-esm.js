@@ -29,7 +29,7 @@ NumeralFormatter.groupStyle = {
     thousand: 'thousand',
     lakh:     'lakh',
     wan:      'wan',
-    none:     'none'    
+    none:     'none'
 };
 
 NumeralFormatter.prototype = {
@@ -76,7 +76,7 @@ NumeralFormatter.prototype = {
         } else {
             partSignAndPrefix = partSign;
         }
-        
+
         partInteger = value;
 
         if (value.indexOf(owner.numeralDecimalMark) >= 0) {
@@ -141,7 +141,7 @@ var DateFormatter = function (datePattern, dateMin, dateMax) {
         return parseInt(x, 10);
       });
     if (owner.dateMax.length === 2) owner.dateMax.unshift(0);
-    
+
     owner.initBlocks();
 };
 
@@ -1012,7 +1012,7 @@ var DefaultProperties = {
 
         // others
         target.swapHiddenInput = !!opts.swapHiddenInput;
-        
+
         target.numericOnly = target.creditCard || target.date || !!opts.numericOnly;
 
         target.uppercase = !!opts.uppercase;

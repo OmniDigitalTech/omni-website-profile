@@ -46,7 +46,7 @@ if (tasks_list) {
                 Array.from(tasks).forEach(function (ele) {
                     task_box = ele.getElementsByClassName("tasks-box");
                     task_counted = task_box.length;
-                });     
+                });
                 badge = element.querySelector(".totaltask-badge").innerText = "";
                 badge = element.querySelector(".totaltask-badge").innerText = task_counted;
             });
@@ -122,7 +122,7 @@ if (tasks_list) {
 
             var subTask = document.getElementById("kanbanboard");
             subTask.insertAdjacentHTML("beforeend", kanbanlisthtml);
-            
+
             var link = document.getElementById("addBoardBtn-close");
             link.click();
 
@@ -139,12 +139,12 @@ if (tasks_list) {
         }
     }
 
-    // Add Members 
+    // Add Members
     var addMember = document.getElementById('addMember');
     if (addMember) {
         document.getElementById("addMember").addEventListener("click", newMemberAdd);
 
-        //set membar profile 
+        //set membar profile
         var profileField = document.getElementById("profileimgInput");
         var reader = new FileReader();
         profileField.addEventListener("change", function (e) {

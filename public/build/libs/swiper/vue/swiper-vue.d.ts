@@ -515,7 +515,7 @@ declare const Swiper: DefineComponent<
    * Event will be fired on zoom change
    */
   zoomChange: (swiper: SwiperClass, scale: number, imageEl: HTMLElement, slideEl: HTMLElement) => void;
-    
+
   /**
    * Fired right after Swiper initialization.
    * @note Note that with `swiper.on('init')` syntax it will
@@ -820,7 +820,7 @@ declare const Swiper: DefineComponent<
    * Event will be fired when swiper is unlocked (when `watchOverflow` enabled)
    */
   unlock: (swiper: SwiperClass) => void;
-  
+
   }
 >;
 

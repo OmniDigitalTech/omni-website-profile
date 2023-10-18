@@ -266,9 +266,9 @@ Array.from(document.querySelectorAll(".addMembers-modal")).forEach(function (ele
                         };
 
                         allmemberlist.push(newMember);
-                        
+
                         sortElementsById();
-                        
+
                     }else if(inputName !== "" && inputDesignation !== "" && editlist){
                         var getEditid = 0;
                         getEditid = document.getElementById("memberid-input").value;
@@ -356,7 +356,7 @@ function removeItem() {
 function memberDetailShow() {
     Array.from(document.querySelectorAll(".team-box")).forEach(function (item) {
         item.querySelector(".member-name").addEventListener("click", function () {
-            
+
             var memberName = item.querySelector(".member-name h5").innerHTML;
             var memberDesignation = item.querySelector(".member-designation").innerHTML;
 
@@ -379,7 +379,7 @@ function memberDetailShow() {
             document.querySelector("#member-overview .profile-project").innerHTML = memberProject;
             document.querySelector("#member-overview .profile-task").innerHTML = memberTask;
         });
-    }); 
+    });
 }
 
 // Search product list
