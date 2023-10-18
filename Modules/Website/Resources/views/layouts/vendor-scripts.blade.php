@@ -1,3 +1,4 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="{{ URL::asset('build/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ URL::asset('build/libs/simplebar/simplebar.min.js') }}"></script>
 <script src="{{ URL::asset('build/libs/node-waves/waves.min.js') }}"></script>
@@ -13,9 +14,15 @@
 <!-- swiper.init js -->
 <script src="{{ URL::asset('build/js/pages/swiper.init.js')}}"></script>
 <script>
-    AOS.init({
-        easing: 'ease-out-back',
-        duration: 1000
+    $(document).ready(function() {
+        let currentYear = new Date().getFullYear();
+
+        $('#copy-rights').text(currentYear+'© OMNI DIGITAL TECHNOLOGY - COPYRIGHT');
+
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
     });
 </script>
 @yield('script')

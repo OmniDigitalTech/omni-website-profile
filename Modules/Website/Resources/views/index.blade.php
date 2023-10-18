@@ -11,7 +11,7 @@
 
         <!-- Begin page -->
         <div class="layout-wrapper landing">
-            <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-landing fixed-top" data-aos="fade-down" id="navbar">
                 <div class="container">
                     <a class="navbar-brand" href="{{URL::asset('/index')}}">
                         <img src="{{ URL::asset('build/images/omni-logo-transparent.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="17">
@@ -67,8 +67,8 @@
                     <div class="row justify-content-between align-items-center">
                         <div class="col-lg-6">
                             <div>
-                                <h1 class="display-6 fw-semibold text-capitalize mb-3 lh-base">Melangkah Ke Dunia Digital Dengan Penuh Persiapan.</h1>
-                                <p class="lead text-muted lh-base mb-4">
+                                <h1 data-aos="fade-right" class="display-6 fw-semibold text-capitalize mb-3 lh-base" style="background-color: white">Melangkah Ke Dunia Digital Dengan Penuh Persiapan.</h1>
+                                <p class="lead text-muted lh-base mb-4" data-aos="fade-down" data-aos-delay="800">
                                     Kami akan memastikan kehadiran online anda dalam dunia digital website dengan efektif, menarik,
                                     up to date dan  kreativitas tanpa batas.
                                 </p>
@@ -172,7 +172,7 @@
                     <!-- end row -->
 
                     <div class="row g-3">
-                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
@@ -191,12 +191,12 @@
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="300">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
                                         <div class="avatar-title bg-transparent text-success rounded-circle">
-                                            <i class="ri-palette-line fs-36"></i>
+                                            <i class="mdi mdi-integrated-circuit-chip fs-36"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -212,12 +212,12 @@
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="400">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
                                         <div class="avatar-title bg-transparent text-success rounded-circle">
-                                            <i class="ri-lightbulb-flash-line fs-36"></i>
+                                            <i class="mdi mdi-tab-search fs-36"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -232,12 +232,12 @@
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1600">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
                                         <div class="avatar-title bg-transparent text-success rounded-circle">
-                                            <i class="ri-customer-service-line fs-36"></i>
+                                            <i class="mdi mdi-bug-check-outline fs-36"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -253,12 +253,12 @@
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1800">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="600">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
                                         <div class="avatar-title bg-transparent text-success rounded-circle">
-                                            <i class="ri-stack-line fs-36"></i>
+                                            <i class="ri-customer-service-line fs-36"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -274,7 +274,7 @@
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="700">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
@@ -294,12 +294,12 @@
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2200">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="800">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
                                         <div class="avatar-title bg-transparent text-success rounded-circle">
-                                            <i class="ri-slideshow-line fs-36"></i>
+                                            <i class="ri-layout-masonry-line fs-36"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -315,12 +315,12 @@
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2400">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="900">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
                                         <div class="avatar-title bg-transparent text-success rounded-circle">
-                                            <i class="ri-google-fill fs-36"></i>
+                                            <i class="mdi mdi-check-decagram-outline fs-36"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -334,12 +334,12 @@
                             </div>
                         </div>
                         <!-- end col -->
-                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2600">
+                        <div class="col-lg-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="1000">
                             <div class="d-flex p-3">
                                 <div class="flex-shrink-0 me-3">
                                     <div class="avatar-sm icon-effect">
                                         <div class="avatar-title bg-transparent text-success rounded-circle">
-                                            <i class="ri-briefcase-5-line fs-36"></i>
+                                            <i class="mdi mdi-cash-check fs-36"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -365,37 +365,57 @@
                 <div class="container">
                     <div class="row align-items-center gy-4">
                         <div class="col-lg-6 col-sm-7 mx-auto">
-                            <div>
+                            <div data-aos="fade-right">
                                 <img src="{{ URL::asset('build/images/landing/features/img-1.png') }}" alt="" class="img-fluid mx-auto">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="text-muted">
-                                <div class="avatar-sm icon-effect mb-4">
-                                    <div class="avatar-title bg-transparent rounded-circle text-success h1">
-                                        <i class="ri-collage-line fs-36"></i>
+                                <div class="row mb-4" data-aos="fade-left">
+                                    <div class="col-1 avatar-sm icon-effect">
+                                        <div class="avatar-title bg-transparent rounded-circle text-success h1">
+                                            <i class="ri-collage-line fs-36"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col" style="display: flex; align-items: center">
+                                        <h5 class="fs-12 text-uppercase text-success" style="margin: 0">Desain Layout</h5>
                                     </div>
                                 </div>
-                                <h3 class="mb-3 fs-20">Huge collection of widgets</h3>
-                                <p class="mb-4 ff-secondary fs-16">Collection widgets specialize in displaying many elements of the same type, such as a collection of pictures from a collection of articles from a news app or a collection of messages from a communication app.</p>
+                                <h3 class="mb-3 fs-20" data-aos="fade-down" data-aos-delay="400">Pengalaman Pengguna Multidevice</h3>
+                                <p class="mb-4 ff-secondary fs-16" data-aos="fade-down" data-aos-delay="800">
+                                    Dengan desain web yang sesuai dengan identitas merek Anda dan responsif di berbagai perangkat,
+                                    memastikan bahwa situs web Anda dapat dinikmati dengan sempurna di berbagai perangkat.
+                                </p>
 
-                                <div class="row pt-3">
-                                    <div class="col-3">
+                                <div class="row pt-3" data-aos="fade-down" data-aos-delay="1200">
+                                    <div class="col-3" style="display: grid; justify-items: center;">
+                                        <div class="avatar-sm icon-effect mb-4">
+                                            <div class="avatar-title bg-transparent rounded-circle text-success h1">
+                                                <i class="ri-macbook-line fs-36"></i>
+                                            </div>
+                                        </div>
                                         <div class="text-center">
-                                            <h4>5</h4>
-                                            <p>Dashboards</p>
+                                            <p>Desktop</p>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-3" style="display: grid; justify-items: center;">
+                                        <div class="avatar-sm icon-effect mb-4">
+                                            <div class="avatar-title bg-transparent rounded-circle text-success h1">
+                                                <i class="ri-smartphone-line fs-36"></i>
+                                            </div>
+                                        </div>
                                         <div class="text-center">
-                                            <h4>150+</h4>
-                                            <p>Pages</p>
+                                            <p>Ponsel</p>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-3" style="display: grid; justify-items: center;">
+                                        <div class="avatar-sm icon-effect mb-4">
+                                            <div class="avatar-title bg-transparent rounded-circle text-success h1">
+                                                <i class="ri-tablet-line fs-36"></i>
+                                            </div>
+                                        </div>
                                         <div class="text-center">
-                                            <h4>7+</h4>
-                                            <p>Functional Apps</p>
+                                            <p>Tablet</p>
                                         </div>
                                     </div>
                                 </div>
@@ -439,95 +459,26 @@
                     <div class="row align-items-center gy-4">
                         <div class="col-lg-6 order-2 order-lg-1">
                             <div class="text-muted">
-                                <h5 class="fs-12 text-uppercase text-success">Design</h5>
-                                <h4 class="mb-3">Well Designed Dashboards</h4>
-                                <p class="mb-4 ff-secondary">Quality Dashboards (QD) is a condition-specific, actionable web-based application for quality reporting and population
-                                    management that is integrated into the Electronic Health Record (EHR).</p>
-
-                                <div class="row">
-                                    <div class="col-sm-5">
-                                        <div class="vstack gap-2">
-                                            <div class="d-flex align-items-center">
-                                                <div class="flex-shrink-0 me-2">
-                                                    <div class="avatar-xs icon-effect">
-                                                        <div
-                                                            class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                            <i class="ri-check-fill"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h5 class="fs-14 mb-0">Ecommerce</h5>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <div class="flex-shrink-0 me-2">
-                                                    <div class="avatar-xs icon-effect">
-                                                        <div
-                                                            class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                            <i class="ri-check-fill"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h5 class="fs-14 mb-0">Analytics</h5>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <div class="flex-shrink-0 me-2">
-                                                    <div class="avatar-xs icon-effect">
-                                                        <div
-                                                            class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                            <i class="ri-check-fill"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h5 class="fs-14 mb-0">CRM</h5>
-                                                </div>
-                                            </div>
+                                <div class="row mb-4" data-aos="fade-right">
+                                    <div class="col-1 avatar-sm icon-effect">
+                                        <div class="avatar-title bg-transparent rounded-circle text-success h1">
+                                            <i class="mdi mdi-search-web fs-36"></i>
                                         </div>
                                     </div>
-                                    <div class="col-sm-5">
-                                        <div class="vstack gap-2">
-                                            <div class="d-flex align-items-center">
-                                                <div class="flex-shrink-0 me-2">
-                                                    <div class="avatar-xs icon-effect">
-                                                        <div
-                                                            class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                            <i class="ri-check-fill"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h5 class="fs-14 mb-0">Crypto</h5>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <div class="flex-shrink-0 me-2">
-                                                    <div class="avatar-xs icon-effect">
-                                                        <div
-                                                            class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                            <i class="ri-check-fill"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h5 class="fs-14 mb-0">Projects</h5>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="col" style="display: flex; align-items: center">
+                                        <h5 class="fs-12 text-uppercase text-success" style="margin: 0">Search Engine Optimization</h5>
                                     </div>
                                 </div>
-
-                                <div class="mt-4">
-                                    <a href="index" class="btn btn-primary">Learn More <i class="ri-arrow-right-line align-middle ms-1"></i></a>
-                                </div>
+                                <h4 class="mb-3" data-aos="fade-down" data-aos-delay="400">Meningkatkan Visibilitas Anda</h4>
+                                <p class="mb-4 ff-secondary" data-aos="fade-down" data-aos-delay="800">
+                                    Dengan praktik SEO terbaik, kami mengoptimalkan situs web Anda untuk mesin pencari,
+                                    membantu Anda mencapai peringkat tinggi dan mencapai lebih banyak pelanggan.
+                                </p>
                             </div>
                         </div>
                         <!-- end col -->
                         <div class="col-lg-6 col-sm-7 col-10 ms-auto order-1 order-lg-2">
-                            <div>
+                            <div data-aos="fade-left">
                                 <img src="{{ URL::asset('build/images/landing/features/img-2.png') }}" alt="" class="img-fluid">
                             </div>
                         </div>
@@ -536,55 +487,28 @@
 
                     <div class="row align-items-center mt-5 pt-lg-5 gy-4">
                         <div class="col-lg-6 col-sm-7 col-10 mx-auto">
-                            <div>
+                            <div data-aos="fade-right">
                                 <img src="{{ URL::asset('build/images/landing/features/img-3.png') }}" alt="" class="img-fluid">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="text-muted ps-lg-5">
-                                <h5 class="fs-12 text-uppercase text-success">structure</h5>
-                                <h4 class="mb-3">Well Documented</h4>
-                                <p class="mb-4">used to describe something that is known about or known to be true because there are many documents that describe it,
-                                    prove it, etc.</p>
-
-                                <div class="vstack gap-2">
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shrink-0 me-2">
-                                            <div class="avatar-xs icon-effect">
-                                                <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                    <i class="ri-check-fill"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <p class="mb-0">Dynamic Content</p>
+                                <div class="row mb-4" data-aos="fade-left">
+                                    <div class="col-1 avatar-sm icon-effect">
+                                        <div class="avatar-title bg-transparent rounded-circle text-success h1">
+                                            <i class="mdi mdi-resize fs-36"></i>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shrink-0 me-2">
-                                            <div class="avatar-xs icon-effect">
-                                                <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                    <i class="ri-check-fill"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <p class="mb-0">Setup plugin's information.</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shrink-0 me-2">
-                                            <div class="avatar-xs icon-effect">
-                                                <div class="avatar-title bg-transparent text-success rounded-circle h2">
-                                                    <i class="ri-check-fill"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <p class="mb-0">Themes customization information</p>
-                                        </div>
+                                    <div class="col" style="display: flex; align-items: center">
+                                        <h5 class="fs-12 text-uppercase text-success" style="margin: 0">Skalabilitas</h5>
                                     </div>
                                 </div>
+                                <h4 class="mb-3" data-aos="fade-down" data-aos-delay="400">Pertumbuhan Tanpa Batas</h4>
+                                <p class="mb-4" data-aos="fade-down" data-aos-delay="800">
+                                    Dengan menggunakan salah satu teknologi terbaik, pengembangan sistem yang dapat dengan mudah diperluas dan
+                                    disesuaikan dengan pertumbuhan bisnis Anda. Dengan mudah dapat menambahkan fitur
+                                    baru dan memperluas fungsi yang ada.
+                                </p>
                             </div>
                         </div>
                         <!-- end col -->
@@ -602,12 +526,12 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="text-center mb-5">
-                                <h3 class="mb-3 fw-semibold">Pilihan Paket Sesuai Kebutuhan Anda</h3>
-                                <p class="text-muted mb-4">
+                                <h3 class="mb-3 fw-semibold" data-aos="zoom-in-down">Pilihan Paket Sesuai Kebutuhan Anda</h3>
+                                <p class="text-muted mb-4" data-aos="zoom-in-down" data-aos-delay="400">
                                     mulai dari Paket Dasar yang hemat hingga Paket Eksklusif yang dirancang khusus untuk bisnis besar.
                                     Kami punya solusi sesuai dengan kebutuhan Anda.
                                 </p>
-                                <div class="d-flex justify-content-center align-items-center">
+                                <div class="d-flex justify-content-center align-items-center" data-aos="fade-zoom-in" data-aos-delay="1200">
                                     <div>
                                         <h5 class="fs-14 mb-0">Bulanan</h5>
                                     </div>
@@ -628,7 +552,7 @@
                     </div>
                     <!-- end row -->
 
-                    <div class="swiper effect-coverflow-swiper rounded pb-5 swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress">
+                    <div class="swiper effect-coverflow-swiper rounded pb-5 swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress" data-aos="fade-zoom-in" data-aos-delay="1200">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="card plan-box mb-0">
@@ -636,11 +560,11 @@
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1">
                                                 <h5 class="mb-1 fw-semibold">Paket Silver 1</h5>
-                                                <p class="text-muted mb-0">Landing Page / Personal / Company Profile</p>
+                                                <p class="text-muted mb-0">Landing Page / <br> Personal / Company Profile</p>
                                             </div>
                                             <div class="avatar-sm">
                                                 <div class="avatar-title bg-light rounded-circle text-primary">
-                                                    <i class="ri-book-mark-line fs-20"></i>
+                                                    <i class="ri-medal-fill fs-20"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -725,11 +649,11 @@
                             <div class="swiper-slide">
                                 <div class="card plan-box mb-0 ribbon-box right">
                                     <div class="card-body p-4 m-2">
-                                        <div class="ribbon-two ribbon-two-danger"><span>Popular</span></div>
+{{--                                        <div class="ribbon-two ribbon-two-danger"><span>Popular</span></div>--}}
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1">
                                                 <h5 class="mb-1 fw-semibold">Paket Silver 2</h5>
-                                                <p class="text-muted mb-0">Landing Page / Personal / Company Profile</p>
+                                                <p class="text-muted mb-0">Landing Page / <br> Personal / Company Profile</p>
                                             </div>
                                             <div class="avatar-sm">
                                                 <div class="avatar-title bg-light rounded-circle text-primary">
@@ -831,11 +755,11 @@
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1">
                                                 <h5 class="mb-1 fw-semibold">Paket Silver 3</h5>
-                                                <p class="text-muted mb-0">Landing Page / Personal / Company Profile</p>
+                                                <p class="text-muted mb-0">Landing Page / <br> Personal / Company Profile</p>
                                             </div>
                                             <div class="avatar-sm">
                                                 <div class="avatar-title bg-light rounded-circle text-primary">
-                                                    <i class="ri-stack-fill fs-20"></i>
+                                                    <i class="ri-medal-fill fs-20"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -923,11 +847,11 @@
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1">
                                                 <h5 class="mb-1 fw-semibold">Paket Gold 1</h5>
-                                                <p class="text-muted mb-0">Landing Page / Personal / Company Profile</p>
+                                                <p class="text-muted mb-0">Landing Page / <br> Personal / Company Profile</p>
                                             </div>
                                             <div class="avatar-sm">
                                                 <div class="avatar-title bg-light rounded-circle text-primary">
-                                                    <i class="ri-book-mark-line fs-20"></i>
+                                                    <i class="ri-vip-crown-2-fill fs-20"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -1016,11 +940,11 @@
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1">
                                                 <h5 class="mb-1 fw-semibold">Paket Gold 2</h5>
-                                                <p class="text-muted mb-0">landing Page / Personal / Company Profile</p>
+                                                <p class="text-muted mb-0">landing Page / <br> Personal / Company Profile</p>
                                             </div>
                                             <div class="avatar-sm">
                                                 <div class="avatar-title bg-light rounded-circle text-primary">
-                                                    <i class="ri-medal-fill fs-20"></i>
+                                                    <i class="ri-vip-crown-2-fill fs-20"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -1112,7 +1036,7 @@
                                             </div>
                                             <div class="avatar-sm">
                                                 <div class="avatar-title bg-light rounded-circle text-primary">
-                                                    <i class="ri-stack-fill fs-20"></i>
+                                                    <i class="ri-vip-diamond-fill fs-20"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -1200,11 +1124,11 @@
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1">
                                                 <h5 class="mb-1 fw-semibold">Paket Platinum 2</h5>
-                                                <p class="text-muted mb-0">Booking / Portal berita / Toko Online Sederhana</p>
+                                                <p class="text-muted mb-0">Booking / <br> Portal berita / Toko Online Sederhana</p>
                                             </div>
                                             <div class="avatar-sm">
                                                 <div class="avatar-title bg-light rounded-circle text-primary">
-                                                    <i class="ri-stack-fill fs-20"></i>
+                                                    <i class="ri-vip-diamond-fill fs-20"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -1616,8 +1540,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="text-center mb-5">
-                                <h3 class="mb-3 fw-semibold">Sistem kerja Omni</h3>
-                                <p class="text-muted mb-4 ff-secondary">
+                                <h3 class="mb-3 fw-semibold" data-aos="zoom-in-down">Sistem kerja Omni</h3>
+                                <p class="text-muted mb-4 ff-secondary" data-aos="zoom-in-down" data-aos-delay="400">
                                     Omni Digital Technology mengikuti pendekatan terstruktur dalam pengembangan proyek
                                     website, memastikan hasil yang berkualitas dan memenuhi kebutuhan klien.
                                 </p>
@@ -1628,7 +1552,7 @@
 
                     <div class="row text-center">
                         <div class="col-lg-4">
-                            <div class="process-card mt-4">
+                            <div class="process-card mt-4" data-aos="fade-right" data-aos-delay="600">
                                 <div class="process-arrow-img d-none d-lg-block">
                                     <img src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
                                 </div>
@@ -1649,13 +1573,13 @@
                         </div>
                         <!-- end col -->
                         <div class="col-lg-4">
-                            <div class="process-card mt-4">
+                            <div class="process-card mt-4" data-aos="fade-right" data-aos-delay="800" >
                                 <div class="process-arrow-img d-none d-lg-block">
                                     <img src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
                                 </div>
                                 <div class="avatar-sm icon-effect mx-auto mb-4">
                                     <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                        <i class="ri-user-follow-line"></i>
+                                        <i class="ri-edit-box-line"></i>
                                     </div>
                                 </div>
 
@@ -1670,10 +1594,10 @@
                         </div>
                         <!-- end col -->
                         <div class="col-lg-4">
-                            <div class="process-card mt-4">
+                            <div class="process-card mt-4"  data-aos="fade-right" data-aos-delay="1000">
                                 <div class="avatar-sm icon-effect mx-auto mb-4">
                                     <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                        <i class="ri-book-mark-line"></i>
+                                        <i class="ri-code-s-slash-line"></i>
                                     </div>
                                 </div>
 
@@ -1688,42 +1612,32 @@
                         </div>
                         <!-- end col -->
                         <div class="col-lg-4">
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-4">
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-4">
-                        </div>
-                        <!-- end col -->
-                        <div class="col-lg-4">
-                            <div class="process-card mt-4">
-                                <div class="process-arrow-img d-none d-lg-block">
-                                    <img style="transform: scaleX(-1);" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
-                                </div>
+                            <div class="process-card mt-4" data-aos="fade-left" data-aos-delay="1600">
+{{--                                <div class="process-arrow-img d-none d-lg-block">--}}
+{{--                                    <img style="transform: scaleX(-1);" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">--}}
+{{--                                </div>--}}
                                 <div class="avatar-sm icon-effect mx-auto mb-4">
                                     <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                        <i class="ri-quill-pen-line"></i>
+                                        <i class="ri-bug-2-line"></i>
                                     </div>
                                 </div>
-
-                                <h5>Pengujian</h5>
+                                <h5>Dukungan dan Pemeliharaan</h5>
                                 <p class="text-muted ff-secondary">
-                                    Sebelum peluncuran, kami akan menguji website secara menyeluruh. Ini mencakup
-                                    pengujian fungsional, uji kinerja, uji kompatibilitas perangkat, dan uji keamanan. Kami
-                                    memastikan bahwa website beroperasi dengan baik dan bebas dari bug.
+                                    Setelah peluncuran, kami tetap memberikan dukungan teknis dan pemeliharaan. Kami siap
+                                    merespons permintaan perubahan atau pemeliharaan rutin untuk menjaga website tetap
+                                    optimal.
                                 </p>
                             </div>
                         </div>
                         <!-- end col -->
                         <div class="col-lg-4">
-                            <div class="process-card mt-4">
-                                <div class="process-arrow-img d-none d-lg-block">
+                            <div class="process-card mt-4" data-aos="fade-left" data-aos-delay="1400">
+                                <div class="process-arrow-img d-none d-lg-block" style="left: -30%">
                                     <img style="transform: scaleX(-1);" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
                                 </div>
                                 <div class="avatar-sm icon-effect mx-auto mb-4">
                                     <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                        <i class="ri-user-follow-line"></i>
+                                        <i class="ri-global-line"></i>
                                     </div>
                                 </div>
 
@@ -1737,46 +1651,40 @@
                         </div>
                         <!-- end col -->
                         <div class="col-lg-4">
-                            <div class="process-card mt-4">
+                            <div class="process-card mt-4" data-aos="fade-left" data-aos-delay="1200">
                                 <div class="process-arrow-img d-none d-lg-block">
-                                    <img style="transform: rotate(90deg);" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
+                                    <img style="transform: rotate(90deg); width: 70%; height: auto" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="">
                                 </div>
                                 <div class="avatar-sm icon-effect mx-auto mb-4">
                                     <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                        <i class="ri-book-mark-line"></i>
+                                        <i class="ri-terminal-box-line"></i>
                                     </div>
                                 </div>
-
-                                <h5>Dukungan dan Pemeliharaan</h5>
+                                <h5>Pengujian</h5>
                                 <p class="text-muted ff-secondary">
-                                    Setelah peluncuran, kami tetap memberikan dukungan teknis dan pemeliharaan. Kami siap
-                                    merespons permintaan perubahan atau pemeliharaan rutin untuk menjaga website tetap
-                                    optimal.
+                                    Sebelum peluncuran, kami akan menguji website secara menyeluruh. Ini mencakup
+                                    pengujian fungsional, uji kinerja, uji kompatibilitas perangkat, dan uji keamanan. Kami
+                                    memastikan bahwa website beroperasi dengan baik dan bebas dari bug.
                                 </p>
+                                <div class="process-arrow-img d-none d-lg-block" style="left: -30%">
+                                    <img style="transform: scaleX(-1);" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
+                                </div>
                             </div>
                         </div>
                         <!-- end col -->
                         <div class="col-lg-4">
-                            <div class="process-card mt-4">
-                            <div class="process-arrow-img d-none d-lg-block">
-                                <img style="transform: scaleY(-1);" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
-                            </div>
-{{--                                <div class="avatar-sm icon-effect mx-auto mb-4">--}}
-{{--                                    <div class="avatar-title bg-transparent text-success rounded-circle h1">--}}
-{{--                                        <i class="ri-user-follow-line"></i>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-
-{{--                                <h5>Get free quotes</h5>--}}
-{{--                                <p class="text-muted ff-secondary">The most important aspect of beauty was, therefore, an inherent part.</p>--}}
+                            <div class="process-card mt-4" data-aos="fade-right" data-aos-delay="1800">
+                                <div class="process-arrow-img d-none d-lg-block">
+                                    <img style="transform: scaleY(-1);" src="{{ URL::asset('build/images/landing/process-arrow-img.png') }}" alt="" class="img-fluid">
+                                </div>
                             </div>
                         </div>
                         <!-- end col -->
                         <div class="col-lg-4">
-                            <div class="process-card mt-4">
+                            <div class="process-card mt-4" data-aos="fade-right" data-aos-delay="2000">
                                 <div class="avatar-sm icon-effect mx-auto mb-4">
                                     <div class="avatar-title bg-transparent text-success rounded-circle h1">
-                                        <i class="ri-quill-pen-line"></i>
+                                        <i class="mdi mdi-update"></i>
                                     </div>
                                 </div>
 
@@ -1789,16 +1697,6 @@
                         </div>
                         <!-- end col -->
                         <div class="col-lg-4">
-{{--                            <div class="process-card mt-4">--}}
-{{--                                <div class="avatar-sm icon-effect mx-auto mb-4">--}}
-{{--                                    <div class="avatar-title bg-transparent text-success rounded-circle h1">--}}
-{{--                                        <i class="ri-book-mark-line"></i>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-
-{{--                                <h5>Deliver high quality product</h5>--}}
-{{--                                <p class="text-muted ff-secondary">We quickly learn to fear and thus automatically avoid potentially.</p>--}}
-{{--                            </div>--}}
                         </div>
                         <!-- end col -->
                     </div>
@@ -1814,9 +1712,9 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="text-center mb-5">
-                                <h2 class="mb-3 fw-semibold">Tentang <span class="text-danger">Omni Digital Technology</span></h2>
+                                <h2 class="mb-3 fw-semibold" data-aos="fade-down">Tentang <span class="text-danger">Omni Digital Technology</span></h2>
                                 <br>
-                                <h4 class="text-muted mb-4 ff-secondary">
+                                <h4 class="text-muted mb-4 ff-secondary" data-aos="fade-down" data-aos-delay="400">
                                     Omni Digital Technology adalah vendor yang bergerak di bidang jasa pembuatan web yang
                                     berkomitmen untuk menghadirkan solusi digital berkualitas bagi bisnis dan individu. Dengan
                                     fokus pada inovasi, kreativitas, dan teknologi terkini, Omni Digital Technology telah menjelma
@@ -2013,8 +1911,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="text-center mb-5">
-                                <h3 class="mb-3 fw-semibold">Lebih dekat dengan Kami</h3>
-                                <p class="text-muted mb-4 ff-secondary">
+                                <h3 class="mb-3 fw-semibold" data-aos="fade-down">Lebih dekat dengan Kami</h3>
+                                <p class="text-muted mb-4 ff-secondary" data-aos="fade-down" data-aos-delay="400">
                                     Hubungi kami sekarang untuk berbicara tentang kebutuhan dan ide Anda.
                                     Kunjungi kantor kami atau hubungi kami secara online. Kami siap untuk menjawab semua pertanyaan Anda.
                                 </p>
@@ -2025,7 +1923,7 @@
 
                     <div class="row gy-4">
                         <div class="col-lg-4">
-                            <div>
+                            <div data-aos="fade-right" data-aos-delay="600">
                                 <div class="mt-4">
                                     <h5 class="fs-13 text-muted text-uppercase">Alamat :</h5>
                                     <div class="ff-secondary fw-semibold">
@@ -2050,14 +1948,14 @@
                             <div>
                                 <form>
                                     <div class="row">
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6" data-aos="zoom-in-right" data-aos-delay="800">
                                             <div class="mb-4">
                                                 <label for="name" class="form-label fs-13">Nama</label>
                                                 <input name="name" id="name" type="text"
                                                        class="form-control bg-light border-light" placeholder="nama anda*">
                                             </div>
                                         </div>
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6" data-aos="zoom-in-left" data-aos-delay="800">
                                             <div class="mb-4">
                                                 <label for="email" class="form-label fs-13">Email</label>
                                                 <input name="email" id="email" type="email"
@@ -2065,7 +1963,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row" data-aos="fade-zoom-in" data-aos-delay="1000">
                                         <div class="col-lg-12">
                                             <div class="mb-4">
                                                 <label for="subject" class="form-label fs-13">Subjek</label>
@@ -2074,7 +1972,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row" data-aos="zoom-in-up" data-aos-delay="1200">
                                         <div class="col-lg-12">
                                             <div class="mb-3">
                                                 <label for="comments" class="form-label fs-13">Pesan</label>
@@ -2084,7 +1982,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row" data-aos="zoom-in-right" data-aos-delay="1400">
                                         <div class="col-lg-12 text-end">
                                             <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary"
                                                    value="Send Message">
@@ -2130,12 +2028,12 @@
                     <div class="row">
                         <div class="col-lg-4 mt-4">
                             <div>
-                                <div>
-                                    <img src="{{ URL::asset('build/images/omni-logo-transparent.png') }}" alt="logo light" width="50%" height="25%">
+                                <div data-aos="fade-right">
+                                    <img src="{{ URL::asset('build/images/white-omni-logo-transparent.png') }}" alt="logo light" width="50%" height="25%">
                                 </div>
                                 <div class= "mt-4 fs-13">
-                                    <p>Jembatan Menuju Inovasi.</p>
-                                    <p class="ff-secondary">
+                                    <p data-aos="fade-down" data-aos-delay="400">Jembatan Menuju Inovasi.</p>
+                                    <p data-aos="fade-down" data-aos-delay="800" class="ff-secondary">
                                         Kami disini untuk menjembatani kesenjangan antara ide-ide brilian dan inovasi teknologi meraih kesuksesan di dunia digital.
                                         Dengan dedikasi kami untuk inovasi yang tak terbatas, kami menjadi mitra andal bagi perusahaan dari berbagai industri.
                                         Jangan lewatkan peluang untuk merasakan keajaiban teknologi bersama kami.
@@ -2147,30 +2045,30 @@
                         <div class="col-lg-7 ms-lg-auto">
                             <div class="row">
                                 <div class="col-sm-4 mt-4">
-                                    <h5 class="text-white mb-0">Company</h5>
+                                    <h5 class="text-white mb-0" data-aos="fade-down">Company</h5>
                                     <div class="text-muted mt-3">
                                         <ul class="list-unstyled ff-secondary footer-list fs-14">
-                                            <li><a href="#team">Tentang Kami</a></li>
-                                            <li><a href="#work">Sistem Kerja</a></li>
+                                            <li data-aos="fade-down" data-aos-delay="400"><a href="#team">Tentang Kami</a></li>
+                                            <li data-aos="fade-down" data-aos-delay="800"><a href="#work">Sistem Kerja</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 mt-4">
-                                    <h5 class="text-white mb-0">Apps Pages</h5>
+                                    <h5 class="text-white mb-0" data-aos="fade-down">Apps Pages</h5>
                                     <div class="text-muted mt-3">
                                         <ul class="list-unstyled ff-secondary footer-list fs-14">
-                                            <li><a href="#hero">Beranda</a></li>
-                                            <li><a href="#services">Layanan</a></li>
-                                            <li><a href="#features">Fitur</a></li>
-                                            <li><a href="#plans">Paket</a></li>
+                                            <li data-aos="fade-down" data-aos-delay="400"><a href="#hero">Beranda</a></li>
+                                            <li data-aos="fade-down" data-aos-delay="800"><a href="#services">Layanan</a></li>
+                                            <li data-aos="fade-down" data-aos-delay="1000"><a href="#features">Fitur</a></li>
+                                            <li data-aos="fade-down" data-aos-delay="1200"><a href="#plans">Paket</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 mt-4">
-                                    <h5 class="text-white mb-0">Support</h5>
+                                    <h5 class="text-white mb-0" data-aos="fade-down">Support</h5>
                                     <div class="text-muted mt-3">
                                         <ul class="list-unstyled ff-secondary footer-list fs-14">
-                                            <li><a href="#contact">Kontak</a></li>
+                                            <li data-aos="fade-down" data-aos-delay="400"><a href="#contact">Kontak</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2181,11 +2079,7 @@
                     <div class="row text-center text-sm-start align-items-center mt-5">
                         <div class="col-sm-6">
                             <div>
-                                <p class="copy-rights mb-0">
-                                    <script>
-                                        document.write(new Date().getFullYear())
-                                    </script> © OMNI DIGITAL TECHNOLOGY - COPYRIGHT
-                                </p>
+                                <p class="copy-rights mb-0" id="copy-rights"></p>
                             </div>
                         </div>
     {{--                    <div class="col-sm-6">--}}
