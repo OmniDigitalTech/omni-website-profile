@@ -61,6 +61,10 @@ export default defineConfig({
                     src: 'resources/json',
                     dest: ''
                 },
+                {
+                    src: 'resources/libs',
+                    dest: ''
+                },
             ]
         }),
         {

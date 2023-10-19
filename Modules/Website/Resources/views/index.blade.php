@@ -1,5 +1,5 @@
 @extends('website::layouts.master')
-@section('title') Landing @endsection
+{{--@section('title') Landing @endsection--}}
 @section('css')
     <link href="{{ URL::asset('build/libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
@@ -13,8 +13,8 @@
         <div class="layout-wrapper landing">
             <nav class="navbar navbar-expand-lg navbar-landing fixed-top" data-aos="fade-down" id="navbar">
                 <div class="container">
-                    <a class="navbar-brand" href="{{URL::asset('/index')}}">
-                        <img src="{{ URL::asset('build/images/omni-logo-transparent.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="17">
+                    <a class="navbar-brand" href="{{ route('index') }}">
+                        <img src="{{ URL::asset('build/images/omni-logo-transparent.png') }}" class="card-logo card-logo-dark" alt="logo dark" height="50">
 {{--                        <img src="{{ URL::asset('build/images/logo-light.png') }}" class="card-logo card-logo-light" alt="logo light"--}}
 {{--                             height="17">--}}
                     </a>
@@ -619,8 +619,8 @@
                                                 </li>
                                                 <li>
                                                     <div class="d-flex">
-                                                        <div class="flex-shrink-0 text-danger me-1">
-                                                            <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
                                                             Free revisi <b>2</b> kali selama masa garansi
@@ -629,8 +629,8 @@
                                                 </li>
                                                 <li>
                                                     <div class="d-flex">
-                                                        <div class="flex-shrink-0 text-success me-1">
-                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        <div class="flex-shrink-0 text-danger me-1">
+                                                            <i class="ri-close-circle-fill fs-15 align-middle"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
                                                             Menggunakan Virtual Private Server
@@ -716,7 +716,7 @@
                                                             <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
-                                                            <b>24/7</b> Support
+                                                            Free revisi <b>2</b> kali selama masa garansi.
                                                         </div>
                                                     </div>
                                                 </li>
@@ -724,16 +724,6 @@
                                                     <div class="d-flex">
                                                         <div class="flex-shrink-0 text-danger me-1">
                                                             <i class="ri-close-circle-fill fs-15 align-middle"></i>
-                                                        </div>
-                                                        <div class="flex-grow-1">
-                                                            Free revisi <b>2</b> kali selama masa garansi.
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="d-flex">
-                                                        <div class="flex-shrink-0 text-success me-1">
-                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
                                                             Menggunakan Virtual Private Server
@@ -824,8 +814,8 @@
                                                 </li>
                                                 <li>
                                                     <div class="d-flex">
-                                                        <div class="flex-shrink-0 text-success me-1">
-                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                                                        <div class="flex-shrink-0 text-danger me-1">
+                                                            <i class="ri-close-circle-fill fs-15 align-middle"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
                                                             Menggunakan Virtual Private Server
@@ -906,18 +896,18 @@
                                                 </li>
                                                 <li>
                                                     <div class="d-flex">
-                                                        <div class="flex-shrink-0 text-danger me-1">
-                                                            <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
-                                                            Revisi <b>3</b> kali selama masa garansi
+                                                            Free Revisi <b>3</b> kali selama masa garansi
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="d-flex">
-                                                        <div class="flex-shrink-0 text-danger me-1">
-                                                            <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
                                                             Menggunakan Virtual Private Server
@@ -1003,14 +993,14 @@
                                                             <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
-                                                            Revisi <b>3</b> kali selama masa garansi
+                                                            Free Revisi <b>3</b> kali selama masa garansi
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="d-flex">
-                                                        <div class="flex-shrink-0 text-danger me-1">
-                                                            <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                                                        <div class="flex-shrink-0 text-success me-1">
+                                                            <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
                                                             Menggunakan Virtual Private Server
@@ -1095,7 +1085,7 @@
                                                             <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
-                                                            Revisi <b>3</b> kali selama masa garansi
+                                                            Free Revisi <b>3</b> kali selama masa garansi
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1124,7 +1114,7 @@
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1">
                                                 <h5 class="mb-1 fw-semibold">Paket Platinum 2</h5>
-                                                <p class="text-muted mb-0">Booking / <br> Portal berita / Toko Online Sederhana</p>
+                                                <p class="text-muted mb-0">Booking / Portal berita / <br> Toko Online Sederhana</p>
                                             </div>
                                             <div class="avatar-sm">
                                                 <div class="avatar-title bg-light rounded-circle text-primary">
@@ -1187,7 +1177,7 @@
                                                             <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
                                                         </div>
                                                         <div class="flex-grow-1">
-                                                            Revisi <b>5</b> kali selama masa garansi
+                                                            Free Revisi <b>5</b> kali selama masa garansi
                                                         </div>
                                                     </div>
                                                 </li>
