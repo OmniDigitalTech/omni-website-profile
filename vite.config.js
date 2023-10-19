@@ -1,5 +1,4 @@
-
-const vite = require('vite');
+import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 
@@ -13,7 +12,7 @@ const folder = {
     dist_assets: "public/build/" //build assets files
 };
 
-export default vite.defineConfig({
+export default defineConfig({
     build: {
         manifest: true,
         rtl: true,
@@ -96,4 +95,3 @@ export default vite.defineConfig({
 
     ],
 });
-
