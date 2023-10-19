@@ -115,7 +115,7 @@ var lineChart = new Chart(islinechart, {
             },
         },
     },
-
+    
 });
 }
 

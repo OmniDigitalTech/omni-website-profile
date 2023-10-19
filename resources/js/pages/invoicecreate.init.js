@@ -109,18 +109,18 @@ function new_link() {
 		"</th>" +
 		'<td class="text-start">' +
 		'<div class="mb-2">' +
-		'<input name="name[]" class="form-control bg-light border-0" type="text" id="productName-' + count + '" placeholder="Product Name">' +
+		'<input class="form-control bg-light border-0" type="text" id="productName-' + count + '" placeholder="Product Name">' +
 		'</div>' +
-		'<textarea name="description[]" class="form-control bg-light border-0" id="productDetails-' + count + '" rows="2" placeholder="Product Details"></textarea>' +
+		'<textarea class="form-control bg-light border-0" id="productDetails-' + count + '" rows="2" placeholder="Product Details"></textarea>' +
 		"</div>" +
 		"</td>" +
 		"<td>" +
-		'<input name="price[]" class="form-control bg-light border-0 product-price" type="number" id="productRate-' + count + '" step="0.01" placeholder="$0.00">' +
+		'<input class="form-control bg-light border-0 product-price" type="number" id="productRate-' + count + '" step="0.01" placeholder="$0.00">' +
 		"</td>" +
 		"<td>" +
 		'<div class="input-step">' +
 		'<button type="button" class="minus">–</button>' +
-		'<input name="qty[]" type="number" class="product-quantity" id="product-qty-' + count + '" value="0" readonly>' +
+		'<input type="number" class="product-quantity" id="product-qty-' + count + '" value="0" readonly>' +
 		'<button type="button" class="plus">+</button>' +
 		"</div>" +
 		"</td>" +
@@ -195,20 +195,18 @@ function recalculateCart() {
 	var shipping = subtotal > 0 ? shippingRate : 0;
 	var total = subtotal + tax + shipping - discount;
 
-    document.getElementById("cart-total").value = paymentSign + subtotal.toFixed(2);
-
-	// document.getElementById("cart-subtotal").value =
-	// 	paymentSign + subtotal.toFixed(2);
-	// document.getElementById("cart-tax").value = paymentSign + tax.toFixed(2);
-	// document.getElementById("cart-shipping").value =
-	// 	paymentSign + shipping.toFixed(2);
-	// document.getElementById("cart-total").value = paymentSign + total.toFixed(2);
-	// document.getElementById("cart-discount").value =
-	// 	paymentSign + discount.toFixed(2);
-	// document.getElementById("totalamountInput").value =
-	// 	paymentSign + total.toFixed(2);
-	// document.getElementById("amountTotalPay").value =
-	// 	paymentSign + total.toFixed(2);
+	document.getElementById("cart-subtotal").value =
+		paymentSign + subtotal.toFixed(2);
+	document.getElementById("cart-tax").value = paymentSign + tax.toFixed(2);
+	document.getElementById("cart-shipping").value =
+		paymentSign + shipping.toFixed(2);
+	document.getElementById("cart-total").value = paymentSign + total.toFixed(2);
+	document.getElementById("cart-discount").value =
+		paymentSign + discount.toFixed(2);
+	document.getElementById("totalamountInput").value =
+		paymentSign + total.toFixed(2);
+	document.getElementById("amountTotalPay").value =
+		paymentSign + total.toFixed(2);
 }
 
 function amountKeyup() {
@@ -308,7 +306,7 @@ if (localStorage.getItem("invoice_no") === null && localStorage.getItem("option"
 
 // Invoice Data Load On Form
 if ((viewobj != '') && (options == "edit-invoice")) {
-
+	
 	document.getElementById("registrationNumber").value = viewobj.company_details.legal_registration_no;
 	document.getElementById("companyEmail").value = viewobj.company_details.email;
 	document.getElementById('companyWebsite').value = viewobj.company_details.website;
@@ -443,7 +441,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			var product_rate = parseInt(element.querySelector("#productRate-"+count).value);
 			var product_qty = parseInt(element.querySelector("#product-qty-"+count).value);
 			var product_price = (element.querySelector("#productPrice-"+count).value).split("$");;
-
+			
 			var product_obj = {
 				product_name: product_name,
 				product_details: product_details,
@@ -454,7 +452,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			new_product_obj.push(product_obj);
 			count++;
 		});
-
+		
 		if (formEvent.checkValidity() === false) {
 			formEvent.classList.add("was-validated");
 		} else {

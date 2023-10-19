@@ -1,7 +1,7 @@
 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 67" width="205" height="67">
 	<title>lenovo-svg</title>
 	<style>
-		.s0 { fill: #8c98a4 }
+		.s0 { fill: #8c98a4 } 
 	</style>
 	<g id="Layer">
 		<path id="Path" class="s0" d="m205 8l-13.8 29.6h-3.7l-6.9-14.8h4.6l4.2 9l11.1-23.8z" />

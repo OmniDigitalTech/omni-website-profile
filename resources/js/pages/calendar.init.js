@@ -346,7 +346,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 var endUpdateDay = new Date(ed_date);
                 updateDay = endUpdateDay.setDate(endUpdateDay.getDate() - 1);
             }
-
+            
             var r_date = ed_date == null ? (str_dt(st_date)) : (str_dt(st_date)) + ' to ' + (str_dt(updateDay));
             var er_date = ed_date == null ? (date_r(st_date)) : (date_r(st_date)) + ' to ' + (date_r(updateDay));
 

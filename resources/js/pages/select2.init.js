@@ -39,7 +39,7 @@ $(document).ready(function() {
     data: data
     })
 
-
+    
 });
 
 function formatState (state) {

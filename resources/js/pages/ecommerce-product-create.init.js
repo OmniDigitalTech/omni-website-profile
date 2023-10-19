@@ -69,13 +69,13 @@ var dropzone = new Dropzone(".dropzone", {
         }
     });
 
-
+    
 
     // choices category input
     var prdoctCategoryInput = new Choices('#choices-category-input', {
         searchEnabled: false,
     });
-
+    
     var editinputValueJson = sessionStorage.getItem('editInputValue');
     if (editinputValueJson) {
         var editinputValueJson = JSON.parse(editinputValueJson);
@@ -89,7 +89,7 @@ var dropzone = new Dropzone(".dropzone", {
         prdoctCategoryInput.setChoiceByValue(editinputValueJson.product.category);
     }
 
-
+   
     // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
         .forEach(function (form) {

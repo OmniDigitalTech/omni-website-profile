@@ -14,7 +14,7 @@ if (document.querySelectorAll(".plan-nav .nav-item .nav-link")) {
             Array.from(month).forEach(function (m){
                 annual[i].style.display = "none";
                 m.style.display = "block";
-                i ++;
+                i ++;  
             });
         }
     });

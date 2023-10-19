@@ -32,7 +32,7 @@ function getChartColorsArray(chartId) {
 }
 
 
-// Basic Polar Area
+// Basic Polar Area 
 var chartPolarareaBasicColors = getChartColorsArray("basic_polar_area");
 if(chartPolarareaBasicColors){
 var options = {
