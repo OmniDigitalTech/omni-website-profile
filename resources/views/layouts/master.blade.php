@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Jasa Pengembangan Website Profesional | Omni Digital Technology</title>
+    <title>@yield('title') | Omni Digital Technology</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="
         Jasa pengembangan website profesional yang menyediakan solusi KUSTOM untuk kebutuhan personal atau bisni Anda.
@@ -37,13 +37,12 @@
     <meta name="msapplication-TileImage" content="{{ URL::asset("build/images/favicon/ms-icon-144x144.png") }}">
     <meta name="theme-color" content="#ffffff">
 
-    @include('website::layouts.head-css')
+    @include('layouts.head-css')
 </head>
+    @yield('body')
 
-@yield('body')
+    @yield('content')
 
-@yield('content')
-
-@include('website::layouts.vendor-scripts')
-</body>
+    @include('layouts.vendor-scripts')
+    </body>
 </html>

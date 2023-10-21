@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::prefix('website')->group(function() {
     Route::get('/', 'WebsiteController@index')->name('index');
 });

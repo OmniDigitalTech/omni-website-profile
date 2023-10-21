@@ -18,6 +18,8 @@
         let currentYear = new Date().getFullYear();
 
         $('#copy-rights').text(currentYear+'© OMNI DIGITAL TECHNOLOGY - COPYRIGHT');
+        $('#login-copyright').text(currentYear+'© OMNI DIGITAL TECHNOLOGY - COPYRIGHT');
+        $('#register-copyright').text(currentYear+'© OMNI DIGITAL TECHNOLOGY - COPYRIGHT');
 
         AOS.init({
             easing: 'ease-out-back',

@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use \Modules\Management\Http\Controllers\ManagementController as management;
 use Modules\Website\Http\Controllers\WebsiteController as website;
