@@ -25,7 +25,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script_stop: true
         script: |
-          cd ~/docker-setup/www/main/
+          sudo docker exec -it omni-webserver bash
           git pull
           npm run build
           composer i
