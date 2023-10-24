@@ -26,4 +26,4 @@ jobs:
         script_stop: true
         script: |
           cd ~/docker-setup/www/main/
-          git pull origin main
+          sudo git pull origin main
