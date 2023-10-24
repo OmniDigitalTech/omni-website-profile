@@ -25,6 +25,4 @@ jobs:
         script: |
           ls
           git pull
-          cd ..
-          sudo docker compose build
-          sudo docker compose up -d
+          
