@@ -21,5 +21,6 @@ jobs:
     steps:
       - name: Pull
         run: |
-          cd www/html/main
+          cd www
+          ls
           git pull
