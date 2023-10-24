@@ -23,6 +23,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script_stop: true
         script: |
+          ls
           git pull
           cd ..
           sudo docker compose build
