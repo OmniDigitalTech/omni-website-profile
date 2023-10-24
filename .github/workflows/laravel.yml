@@ -10,17 +10,9 @@ jobs:
   container-test-job:
     runs-on: ubuntu-latest
     container:
-      image: node:18
-      env:
-        NODE_ENV: development
-      ports:
-        - 80
-      volumes:
-        - ./www:/var/www/html
-      options: --cpus 1
+      image: omni-webserver:latest
     steps:
       - name: Pull
         run: |
-          cd www
           ls
           git pull
