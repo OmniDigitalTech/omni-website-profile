@@ -19,8 +19,8 @@ jobs:
     - name: Run Docker container to compile assets
       uses: addnab/docker-run-action@v3
       with:
-        image: aschmelyun/cleaver:latest
-        options: ./www:/var/www
+        image: omni-webserver:latest
+        options: -v ./www:/var/www
         run: |
           composer install
           npm install
