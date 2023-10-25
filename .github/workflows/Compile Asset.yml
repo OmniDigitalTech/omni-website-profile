@@ -16,9 +16,8 @@ jobs:
       with:
         php-version: '8.0'
     - uses: actions/checkout@v3
-    - name: Directory
+    - name: Run Composer & npm
       run: |
-        ls -a
-    - name: Run Composer Install
-      run: |
-        docker run -v ./main:/var/www/html/main composer install
+        sudo docker exec omni-webserver composer install
+        sudo docker exec omni-webserver npm install
+        sudo docker exec omni-webserver npm run build
