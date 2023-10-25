@@ -16,6 +16,9 @@ jobs:
       with:
         php-version: '8.0'
     - uses: actions/checkout@v3
+    - name: Directory
+      run: |
+        ls -a
     - name: Run Docker container to compile assets
       uses: addnab/docker-run-action@v3
       with:
