@@ -19,12 +19,6 @@ jobs:
     - name: Directory
       run: |
         ls -a
-    - name: Run Docker container to compile assets
-      uses: addnab/docker-run-action@v3
-      with:
-        image: omni-webserver:latest
-        options: -v ./www:/var/www
-        run: |
-          composer install
-          npm install
-          npm run build
+    - name: Run Composer Install
+      run: |
+        docker run -v ./main:/var/www/html/main composer install
