@@ -722,7 +722,7 @@
                     </div>
                     <!-- end row -->
 
-                    <div class="card__container swiper effect-coverflow-swiper rounded pb-5 swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress">
+                    <div class="card__container swiper">
                         <div class="card__content">
                             <div class="swiper-wrapper">
                                 <article class="card__article swiper-slide">
@@ -1405,10 +1405,9 @@
                                 </article>
                             </div>
                         </div>
-
-                        <!-- Pagination -->
-                        <div class="swiper-pagination"></div>
                     </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination pb-5"></div>
                 </div>
                 <!-- end container -->
             </section>
@@ -2386,6 +2385,12 @@
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
+                },
+
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: true,
                 },
 
                 breakpoints:{
