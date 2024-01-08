@@ -141,6 +141,66 @@
                 right: -1rem;
             }
         }
+
+        @media  screen and (min-width: 1440px) {
+            div.hidden-mobile {
+                display: block;
+            }
+
+            div.hidden-web {
+                display: none;
+            }
+        }
+
+        @media  screen and (max-width: 1440px) {
+            div.hidden-mobile {
+                display: block;
+            }
+
+            div.hidden-web {
+                display: none;
+            }
+        }
+
+        @media  screen and (max-width: 1024px) {
+            div.hidden-mobile {
+                display: none;
+            }
+
+            div.hidden-web {
+                display: block;
+            }
+        }
+
+        @media  screen and (max-width: 768px) {
+            div.hidden-mobile {
+                display: none;
+            }
+
+            div.hidden-web {
+                display: block;
+            }
+        }
+
+        @media  screen and (max-width: 480px) {
+            div.hidden-mobile {
+                display: none;
+            }
+
+            div.hidden-web {
+                display: block;
+            }
+        }
+
+        @media  screen and (max-width: 375px) {
+            div.hidden-web {
+                display: block;
+            }
+
+            div.hidden-mobile {
+                display: none;
+            }
+        }
     </style>
 @endsection
 @section('body')
@@ -722,8 +782,8 @@
                     </div>
                     <!-- end row -->
 
-                    <div class="card__container swiper">
-                        <div class="card__content">
+                    <div class="card__container swiper hidden-web" data-aos="fade-zoom-in" data-aos-delay="1200">
+                        <div class="card__content effect-custom-swiper">
                             <div class="swiper-wrapper">
                                 <article class="card__article swiper-slide">
                                     <div class="card plan-box mb-0">
@@ -1407,11 +1467,12 @@
                         </div>
                     </div>
                     <!-- Pagination -->
-                    <div class="swiper-pagination pb-5"></div>
-                </div>
+                    <div class="swiper-pagination swiper-pagination-dark swiper-pagination-clickable swiper-pagination-bullets
+                            swiper-pagination-horizontal swiper-pagination-bullets-dynamic" style="width: 150px;">
+                    </div>
 
-                <div class="card__container swiper">
-                        <div class="card__content swiper effect-coverflow-swiper">
+                    <div class="card__container swiper hidden-mobile" data-aos="fade-zoom-in" data-aos-delay="1200">
+                        <div class="swiper effect-coverflow-swiper">
                             <div class="swiper-wrapper">
                                 <article class="card__article swiper-slide">
                                     <div class="card plan-box mb-0">
@@ -2094,9 +2155,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Pagination -->
-                    <div class="swiper-pagination pb-5"></div>
+
+{{--                    <div class="swiper-pagination swiper-pagination-dark swiper-pagination-clickable swiper-pagination-bullets--}}
+{{--                            swiper-pagination-horizontal swiper-pagination-bullets-dynamic" style="width: 150px;">--}}
+{{--                    </div>--}}
                 </div>
+
                 <!-- end container -->
             </section>
             <!-- end plan -->
@@ -3070,23 +3134,17 @@
                     dynamicBullets: true,
                 },
 
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: true,
                 },
-
-                // loop: true,
-                // autoplay: {
-                //     delay: 3000,
-                //     disableOnInteraction: true,
-                // },
 
                 breakpoints:{
                     600: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                     },
                     968: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                     },
                 },
             });

@@ -2,9 +2,10 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-topbar="light">
 
 <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>@yield('title') | Omni Digital Technology</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Omni Digital Technology">
     <meta name="description" content="
         Jasa pengembangan website profesional yang menyediakan solusi KUSTOM untuk kebutuhan personal atau bisni Anda.
         Tersedia berbagai paket yang menarik juga ramah dompet dan rekening." />
@@ -12,6 +13,8 @@
     <meta name="author" content="Omni Digital Technology" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
     <meta name="google" content="nositelinkssearchbox">
 {{--    <meta name="google-site-verification" content="">--}}
 
@@ -44,5 +47,6 @@
     @yield('content')
 
     @include('layouts.vendor-scripts')
+
     </body>
 </html>
